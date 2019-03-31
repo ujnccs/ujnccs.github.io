@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<span style="color:red;">I am looking for highly motivated graduate students to join us on exciting information security projects! Please feel free to email your CV, Transcripts, and Publications (if any) to ist.ujn@gmail.com for opportunities.</span>
+<span style="color:red;">I am looking for highly motivated graduate students to join us on exciting information security projects! Please feel free to email your CV, Transcripts, and Publications (if any) to ist.ujn AT gmail.com for opportunities.</span>
 
 I am an assistant professor at University of Jinan, and also a postdoctoral researcher hosted by Prof. Yan Huang at Indiana University Bloomington. I obtained my Ph.D. degree from Shandong University. My advisor is Prof. Qiuliang Xu.
 
@@ -16,4 +16,4 @@ My research interests include network security, information privacy and applied 
 
 For more info
 ------
-More info or questions about our group, please contact at ist.ujn@gmail.com.
+More info or questions about our group, please contact at ist.ujn AT gmail.com.

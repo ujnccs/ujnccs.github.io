@@ -1,0 +1,20 @@
+---
+title: "Applied Cryptography"
+collection: teaching
+type: "Undergraduate course"
+permalink: /teaching/2014-spring-teaching-1
+venue: "University of Jinan , Department"
+date: 2018-01-01
+location: "Jinan, China"
+---
+
+Waiting for updates.
+
+Heading 1
+======
+
+Heading 2
+======
+
+Heading 3
+======

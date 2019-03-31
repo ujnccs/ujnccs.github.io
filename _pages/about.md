@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am looking for highly motivated graduate students to join us on exciting information security projects!
+<font color=gray size=72>color=gray</font> I am looking for highly motivated graduate students to join us on exciting information security projects!
 
 I am an assistant professor at University of Jinan. I am also a postdoctoral researcher hosted by Prof. Yan Huang at Indiana University Bloomington. I obtained my Ph.D. degree from Shandong University. My advisor is Prof. Qiuliang Xu.
 

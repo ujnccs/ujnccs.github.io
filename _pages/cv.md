@@ -11,30 +11,27 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Sep. 2011 –Jun. 2016
+Ph.D. in Computer Science, School of Computer Science and Technology, Shandong University, Jinan,P.R.China.
+*Sep. 2007 –Jun. 2011
+Bachelor of Computer Science and Technology, School of Mathematics and Computer Science, Hunan Normal University, Changsha, P.R.China.
+
+Exchange Student in Computer Science (Mar. 2009 – Mar. 2010), Department of Computer Science,
+Korea National University of Education, Cheongju, Republic of Korea.
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Jul. 2016 –Present
+Lecturer (Assistant Professor), Shandong Provincial Key Laboratory for Network based Intelligent Computing,
+School of Information Science and Engineering, University of Jinan, Jinan, P.R.China.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
+
+RESEARCH INTERESTS
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Cryptography: Theory and Practice
+* Practical Secure Multi-Party Computation
+* Privacy-Preserving Techniques
+* Mobile Security
 
 Publications
 ======
@@ -54,6 +51,24 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+RESEARCH PROJECTS
 ======
-* Currently signed in to 43 different slack teams
+*Jan. 1, 2018 –Dec. 31, 2020
+National Natural Science Foundation of China, “Research on Efficient Secure Two-Party Computation for
+Privacy-Preserving Genomic Sequence Comparison” (No. 61702218) (As the Principal Investigator)
+*Jan. 1, 2016 –Dec. 31, 2019
+National Natural Science Foundation of China, “Research on Theory of Secure Multi-Party Computation”
+(No. 61572294) (As a Member of Research Team)
+*Jan. 1, 2015 –Dec. 31, 2017
+Pre-research Project of General Armament Department, “Research on Efficient *** Computing on Encrypted
+Data” (Secret Project) (As a Member of Research Team)
+*Jan. 1, 2015 –Dec. 31, 2017
+Pre-research Project of General Armament Department, “Research on Keywords *** Querying Techniques”
+(Secret Project) (As a Member of Research Team)
+*Jan. 1, 2012 –Dec. 31, 2015
+National Natural Science Foundation of China, “Research on Fundamental Theory of Secure Multi-Party
+Computation” (No. 61173139) (As a Member of Research Team)
+*Jan. 1, 2012 –Dec. 31, 2014
+Doctoral Fund of Ministry of Education of China, “Research on Basic Operations of Secure Multi-Party
+Computation and Universally Composable Security” (No. 20110131110027) (As a Member of ResearchTeam)
+

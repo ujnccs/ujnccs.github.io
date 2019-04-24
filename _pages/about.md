@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<span style="color:red;">I am looking for highly motivated graduate students to join us on exciting information security projects! Please feel free to email your CV, Transcripts, and Publications to ist.ujn (at) gmail.com for CSC scholarship opportunities.</span>
+<span style="color:red;">I am looking for highly motivated graduate students to join us on exciting information security projects! Please feel free to email your CV, Transcripts, and Publications to ist.ujn (at) gmail.com for CSC scholarship opportunities. For more information, please refer to http://ise.ujn.edu.cn/Contact_Us.htm</span>
 
 I am an assistant professor at University of Jinan, and also a postdoctoral researcher hosted by Prof. Yan Huang at Indiana University Bloomington. I obtained my Ph.D. degree from Shandong University in 2016. My advisor is Prof. Qiuliang Xu.
 

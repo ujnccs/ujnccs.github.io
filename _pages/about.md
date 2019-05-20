@@ -12,7 +12,7 @@ redirect_from:
 
 I am an assistant professor at [University of Jinan](http://www.ujn.edu.cn/en/), and also a postdoctoral researcher hosted by [Prof. Yan Huang](http://homes.sice.indiana.edu/yh33/) at [Indiana University Bloomington](https://www.iu.edu). I obtained my Ph.D. degree from [Shandong University](http://www.en.sdu.edu.cn/) in 2016. My advisor is Prof. Qiuliang Xu.
 
-My research interests include information security, data analysis privacy, and applied cryptography. Recently, I am focusing on practical secure two-party computation, privacy-preserving machine learning, and privacy-preserving genomic data analysis.
+My research interests include information security, data privacy, and applied cryptography. Recently, I am focusing on practical secure two-party computation, privacy-preserving machine learning, and privacy-preserving genomic data analysis.
 
 For more info
 ------

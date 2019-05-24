@@ -3,15 +3,15 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "CV"
+  - title: "C.V."
     url: /cv/
     
   - title: "Teaching"
     url: /teaching/    
     
-  - title: "Postgraduate"
+  - title: "Students"
     url: /portfolio/
         
-  - title: "Else"
+  - title: "Projects"
     url: /year-archive/
     

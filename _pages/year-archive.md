@@ -33,12 +33,12 @@ National Natural Science Foundation of China, “Research on Theory of Secure Mu
 
 Jan. 1, 2015 –Dec. 31, 2017
 
-Pre-research Project of General *** Department, “Research on Efficient *** Computing on Encrypted
+Pre-research Project of General ** Department, “Research on Efficient ** Computing on Encrypted
 Data” (<b>Co-PI</b>)
 
 Jan. 1, 2015 –Dec. 31, 2017
 
-Pre-research Project of General *** Department, “Research on Keywords *** Querying Techniques” (<b>Co-PI</b>)
+Pre-research Project of General ** Department, “Research on Keywords ** Querying Techniques” (<b>Co-PI</b>)
 
 Jan. 1, 2012 –Dec. 31, 2015
 

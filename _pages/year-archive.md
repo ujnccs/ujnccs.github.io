@@ -11,7 +11,7 @@ redirect_from:
 {% include base_path %}
 
 
-RESEARCH PROJECTS
+
 ======
 Jan. 1, 2018 –Dec. 31, 2020
 

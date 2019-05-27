@@ -3,8 +3,11 @@ layout: archive
 title: "Projects"
 permalink: /year-archive/
 author_profile: true
-- /resume
+redirect_from:
+  - /resume
 ---
+
+
 {% include base_path %}
 
 

@@ -4,6 +4,7 @@ title: "Projects"
 permalink: /year-archive/
 author_profile: true
 - /resume
+---
 {% include base_path %}
 
 

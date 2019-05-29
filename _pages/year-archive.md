@@ -21,11 +21,11 @@ Privacy-Preserving Genomic Sequence Comparison” (No. 61702218) (<b>Principal I
 
 Jan. 1, 2018 –Dec. 31, 2020
 
-Shandong Province Higher Educational Science and Technology Program, "Efficient and Secure Genomic Sequence Alignment in Cloud Environment" (No. J18KA349) (<b>PI</b>)
+Shandong Province Higher Educational Science and Technology Program, "Research on Efficient and Secure Genomic Sequence Alignment in Cloud Environment" (No. J18KA349) (<b>PI</b>)
 
 Jan. 1, 2019 –Dec. 31, 2021
 
-Project of Independent Cultivated Innovation Team of Jinan City, "Intelligent Mobile Malicious Application Behavior Detection" (No. 2018GXRC002) (<b>Co-PI</b>)
+Project of Independent Cultivated Innovation Team of Jinan City, "Research on Intelligent Mobile Malicious Application Behavior Detection" (No. 2018GXRC002) (<b>Co-PI</b>)
 
 Jan. 1, 2016 –Dec. 31, 2019
 
@@ -35,11 +35,11 @@ National Natural Science Foundation of China, “Research on Theory of Secure Mu
 Jan. 1, 2015 –Dec. 31, 2017
 
 Pre-research Project of General ** Department, “Research on Efficient ** Computing on Encrypted
-Data” (<b>Co-PI</b>)
+Data” (No. **) (<b>Co-PI</b>)
 
 Jan. 1, 2015 –Dec. 31, 2017
 
-Pre-research Project of General ** Department, “Research on Keywords ** Querying Techniques” (<b>Co-PI</b>)
+Pre-research Project of General ** Department, “Research on Keywords ** Querying Techniques” (No. **) (<b>Co-PI</b>)
 
 Jan. 1, 2012 –Dec. 31, 2015
 

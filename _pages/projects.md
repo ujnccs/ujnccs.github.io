@@ -29,24 +29,26 @@ Project of Independent Cultivated Innovation Team of Jinan City, "Research on In
 
 Jan. 1, 2016 –Dec. 31, 2019
 
+======
+
 National Natural Science Foundation of China, “Research on Theory of Secure Multi-Party Computation”
-(No. 61572294) (<b>Co-PI</b>)
+(No. 61572294) (<b>Project Member</b>)
 
 Jan. 1, 2015 –Dec. 31, 2017
 
 Pre-research Project of General ** Department, “Research on Efficient ** Computing on Encrypted
-Data” (No. **) (<b>Co-PI</b>)
+Data” (No. **) (<b>Project Member</b>)
 
 Jan. 1, 2015 –Dec. 31, 2017
 
-Pre-research Project of General ** Department, “Research on Keywords ** Querying Techniques” (No. **) (<b>Co-PI</b>)
+Pre-research Project of General ** Department, “Research on Keywords ** Querying Techniques” (No. **) (<b>Project Member</b>)
 
 Jan. 1, 2012 –Dec. 31, 2015
 
 National Natural Science Foundation of China, “Research on Fundamental Theory of Secure Multi-Party
-Computation” (No. 61173139) (<b>Co-PI</b>)
+Computation” (No. 61173139) (<b>Project Member</b>)
 
 Jan. 1, 2012 –Dec. 31, 2014
 
 Doctoral Fund of Ministry of Education of China, “Research on Basic Operations of Secure Multi-Party
-Computation and Universally Composable Security” (No. 20110131110027) (<b>Co-PI</b>)
+Computation and Universally Composable Security” (No. 20110131110027) (<b>Project Member</b>)

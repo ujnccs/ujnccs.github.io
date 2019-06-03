@@ -1,12 +1,14 @@
 ---
 permalink: /
-title: "Chuan Zhao"
+title: "About us"
 excerpt: "Homepage"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+
 
 <span style="color:red;">I am looking for highly motivated graduate students to join us on exciting information security projects! Please feel free to email your CV, Transcripts, and Publications to ist.ujn(AT)gmail.com for CSC scholarship and UJN scholarship opportunities. </span>
 

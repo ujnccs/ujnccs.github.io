@@ -19,6 +19,11 @@ Jan. 1, 2018 –Dec. 31, 2020
 <b>National Natural Science Foundation of China</b>, “Research on Efficient Secure Two-Party Computation for
 Privacy-Preserving Genomic Sequence Comparison” (No. 61702218) (<b>Principal Investigator, PI</b>)
 
+Jan. 1, 2020 –Dec. 31, 2022
+
+<b>Shandong Provincial Key R&D Programa</b>, “Research and Development of Privacy-Preserving Cloud Computing Platform for Precision Medicine” (No. xxx) (<b>PI</b>)
+
+
 Jan. 1, 2018 –Dec. 31, 2020
 
 <b>Shandong Province Higher Educational Science and Technology Program</b>, "Research on Efficient and Secure Genomic Sequence Alignment in Cloud Environment" (No. J18KA349) (<b>PI</b>)

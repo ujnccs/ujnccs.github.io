@@ -21,7 +21,7 @@ Privacy-Preserving Genomic Sequence Comparison” (No. 61702218) (<b>Principal I
 
 Jan. 1, 2019 –Dec. 31, 2021
 
-<b>Shandong Provincial Key R&D Program</b>, “Research and Development of Privacy-Preserving Cloud Computing Platform for Precision Medicine” (No. 2019GGX101028) (<b>PI</b>)
+<b>Shandong Provincial Key Research and Development Project</b>, “Research and Development of Privacy-Preserving Cloud Computing Platform for Precision Medicine” (No. 2019GGX101028) (<b>PI</b>)
 
 Jan. 1, 2018 –Dec. 31, 2020
 

@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "Biography"
 excerpt: "Homepage"
 author_profile: true
 redirect_from: 
@@ -16,6 +16,6 @@ I am an assistant professor at [University of Jinan](http://www.ujn.edu.cn/en/),
 
 My research interests include information security, data privacy, and applied cryptography. Recently, I am focusing on practical secure two-party computation, privacy-preserving machine learning, and privacy-preserving genomic data analysis.
 
-For more info
+Contact us
 ------
-Please contact us at ist.ujn(AT)gmail.com if you have any questions about our group.
+Please contact us at ise_zhaoc(AT)ujn.edu.cn if you have any questions.

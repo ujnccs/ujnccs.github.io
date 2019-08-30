@@ -21,3 +21,4 @@ My research interests include information security, data privacy, and applied cr
 Contact us
 ------
 #Please contact us at ise_zhaoc AT ujn DOT edu DOT cn if you have any questions.
+Please contact us at ![avatar](/email.png) if you have any questions.

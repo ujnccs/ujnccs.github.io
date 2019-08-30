@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Chuan Zhao"
+title                    : "Chuan Zhao (赵川)"
 title_separator          : "-"
-name                     : &name "Chuan Zhao"
+name                     : &name "Chuan Zhao (赵川)"
 description              : &description "personal description"
 url                      : https://ujnccs.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"

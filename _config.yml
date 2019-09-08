@@ -85,8 +85,8 @@ author:
   location         : "U.S."
   employer         :
   googlescholar    : "https://scholar.google.com/citations?hl=zh-CN&user=DvneK_MAAAAJ&view_op=list_works&sortby=pubdate"
-  email            : ise_zhaoc@ujn.edu.cn
-  uri              : "https://dblp.uni-trier.de/pers/hd/z/Zhao:Chuan"
+  email            :
+  uri              : [DBLP]"https://dblp.uni-trier.de/pers/hd/z/Zhao:Chuan"
   bitbucket        :
   codepen          :
   dribbble         :

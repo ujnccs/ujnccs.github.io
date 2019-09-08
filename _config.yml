@@ -86,7 +86,7 @@ author:
   employer         :
   googlescholar    : "https://scholar.google.com/citations?hl=zh-CN&user=DvneK_MAAAAJ&view_op=list_works&sortby=pubdate"
   email            :
-  uri              : [DBLP]"https://dblp.uni-trier.de/pers/hd/z/Zhao:Chuan"
+  uri              : 
   bitbucket        :
   codepen          :
   dribbble         :
@@ -99,7 +99,7 @@ author:
   instagram        :
   lastfm           :
   linkedin         :
-  orcid            : 
+  orcid            : "https://dblp.uni-trier.de/pers/hd/z/Zhao:Chuan"
   pinterest        :
   soundcloud       :
   stackoverflow    : 

@@ -21,4 +21,4 @@ My research interests include information security, data privacy, and applied cr
 Contact us
 ------
 Please contact us at ist.ujn(AT)gmail.com if you have any questions.
-[//]: Please contact us at ![avatar](/email.png) if you have any questions.
+[//]:Please contact us at ![avatar](/email.png) if you have any questions.

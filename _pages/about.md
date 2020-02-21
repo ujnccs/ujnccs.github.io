@@ -12,7 +12,7 @@ redirect_from:
 
 <br/>
 
-Associate professor at [University of Jinan](http://www.ujn.edu.cn/en/), and currently a postdoctoral researcher at [Indiana University Bloomington](https://www.indiana.edu).
+I am working as an associate professor at [University of Jinan](http://www.ujn.edu.cn/en/), and also a postdoctoral researcher at [Indiana University Bloomington](https://www.indiana.edu). I got my PhD in Computer Science at Shandong University in 2016, where I was advised by Prof. Qiuliang Xu (徐秋亮).
 
 My research interests include information security, data privacy, and applied cryptography. Recently, I am focusing on practical secure multi-party computation, privacy-preserving machine learning, and privacy-preserving genomic data analysis.
 

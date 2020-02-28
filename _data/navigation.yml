@@ -3,9 +3,6 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Curriculum Vitae"
-    url: /cv.pdf
-    
   - title: "Teaching"
     url: /teaching/    
     
@@ -14,4 +11,7 @@ main:
         
   - title: "Grants"
     url: /grants/
+
+  - title: "C.V."
+    url: /cv.pdf
     

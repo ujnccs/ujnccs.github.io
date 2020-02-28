@@ -3,15 +3,15 @@ main:
   - title: "Publications"
     url: /publications/
 
+  - title: "Grants"
+    url: /grants/
+    
   - title: "Teaching"
     url: /teaching/    
     
   - title: "Students"
     url: /portfolio/
         
-  - title: "Grants"
-    url: /grants/
-
   - title: "C.V."
     url: /cv.pdf
     

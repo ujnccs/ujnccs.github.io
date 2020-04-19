@@ -9,7 +9,7 @@ author_profile: true
 {% include base_path %}
 
 
-Journal:
+SELECTED JOURNALS:
 
 • <b>Chuan Zhao</b>, Shengnan Zhao, Bo Zhang, Shan Jing, Zhenxiang Chen, Minghao Zhao “Oblivious DFA Evaluation on Joint Input and Its Applications”. Published in <i>Information Sciences</i>. 2020.
 
@@ -43,7 +43,7 @@ Journal:
 
 • Yilei Wang, Duncan S. Wong, <b>Chuan Zhao</b>, Qiuliang Xu. “Fair Two-Party Computation with Rational Parties Holding Private Types”. Published in <i>Security and Communication Networks</i>. 2015.
 
-Conference:
+SELECTED CONFERENCES:
 
 • Xiaochao Wei, Han Jiang, <b>Chuan Zhao</b>, Minghao Zhao, Qiuliang Xu. “Fast Cut-and-Choose Bilateral Oblivious Transfer for Malicious Adversaries”. Published in <i>The 15th IEEE International Conference on Trust, Security and Privacy in Computing and Communications</i>. 2016.
 

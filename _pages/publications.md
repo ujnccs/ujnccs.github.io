@@ -20,7 +20,7 @@ SELECTED JOURNALS:
 
 • <b>Chuan Zhao</b>, Shengnan Zhao, Minghao Zhao, Chong-Zhi Gao, Hongwei Li, Yu-an Tan. “Secure Multi-Party Computation: Theory, Practice and Applications”. Published in <i>Information Sciences</i>. 2019.
 
-• <b>Chuan Zhao</b>, Shengnan Zhao, Zhongtian Jia, Bo Zhang, Bin Zhang, “Advances in Practical Secure Two-party Computation and Its Application in Genomic Sequence Comparison (in Chinese)”. Published in <i>Journal of Cryp- tologic Research</i>. 2018.
+• <b>Chuan Zhao</b>, Shengnan Zhao, Zhongtian Jia, Bo Zhang, Bin Zhang, “Advances in Practical Secure Two-party Computation and Its Application in Genomic Sequence Comparison (in Chinese)”. Published in <i>Journal of Cryptologic Research</i>. 2018.
 
 • <b>Chuan Zhao</b>, Shengnan Zhao, Zhenxiang Chen, Bo Zhang, Mauro Conti. “Secure Comparison under Ideal/Real Simulation Paradigm”. Published in <i>IEEE Access</i>. 2018.
 
@@ -30,7 +30,7 @@ SELECTED JOURNALS:
 
 • Shanshan Wang, Qiben Yan, Zhenxiang Chen, Bo Yang, <b>Chuan Zhao</b>, Mauro Conti. “Detecting Android Malware Leveraging Text Semantics of Network Flows”. Published in <i>IEEE Transactions on Information Forensics and Security</i>. 2017.
 
-• <b>Chuan Zhao</b>, Han Jiang, Qiuliang Xu, Yilei Wang, Xiaochao Wei, Shujie Cui. “Fast Two-Output Secure Com- putation with Optimal Error Probability”. Published in <i>Chinese Journal of Electronics</i>. 2017.
+• <b>Chuan Zhao</b>, Han Jiang, Qiuliang Xu, Yilei Wang, Xiaochao Wei, Shujie Cui. “Fast Two-Output Secure Computation with Optimal Error Probability”. Published in <i>Chinese Journal of Electronics</i>. 2017.
 
 • Hao Wang, Debiao He, Jian Shen, Zhihua Zheng, <b>Chuan Zhao</b>, Minghao Zhao. “Verifiable Outsourced Ciphertext-Policy Attribute-Based Encryption in Cloud Computing”. Published in <i>Soft Computing</i>. 2017.
 

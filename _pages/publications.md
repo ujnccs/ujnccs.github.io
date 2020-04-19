@@ -8,6 +8,7 @@ author_profile: true
 
 {% include base_path %}
 
+======
 
 SELECTED JOURNALS:
 
@@ -42,6 +43,8 @@ SELECTED JOURNALS:
 • Yilei Wang, <b>Chuan Zhao</b>, Qiuliang Xu, Zhihua Zheng, Zhenhua Chen, Zhe Liu. “Fair Secure Computation with Reputation Assumptions in the Mobile Social Networks”. Published in <i>Mobile Information Systems</i>. 2015.
 
 • Yilei Wang, Duncan S. Wong, <b>Chuan Zhao</b>, Qiuliang Xu. “Fair Two-Party Computation with Rational Parties Holding Private Types”. Published in <i>Security and Communication Networks</i>. 2015.
+
+======
 
 SELECTED CONFERENCES:
 

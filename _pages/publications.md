@@ -22,7 +22,7 @@ SELECTED JOURNALS:
 
 • <b>Chuan Zhao</b>, Shengnan Zhao, Zhongtian Jia, Bo Zhang, Bin Zhang, “Advances in Practical Secure Two-party Computation and Its Application in Genomic Sequence Comparison (in Chinese)”. Published in <i>Journal of Cryp- tologic Research</i>. 2018.
 
-• <b>Chuan Zhao</b>o, Shengnan Zhao, Zhenxiang Chen, Bo Zhang, Mauro Conti. “Secure Comparison under Ideal/Real Simulation Paradigm”. Published in <i>IEEE Access</i>. 2018.
+• <b>Chuan Zhao</b>, Shengnan Zhao, Zhenxiang Chen, Bo Zhang, Mauro Conti. “Secure Comparison under Ideal/Real Simulation Paradigm”. Published in <i>IEEE Access</i>. 2018.
 
 • Bo Zhang, Tianqing Zhu, Chengyu Hu, <b>Chuan Zhao</b>. “Cryptanalysis of a Lightweight Certificateless Signature Scheme for IIOT Environments”. Published in <i>IEEE Access</i>. 2018.
 

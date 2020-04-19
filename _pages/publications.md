@@ -30,15 +30,15 @@ SELECTED JOURNALS:
 
 • Shanshan Wang, Qiben Yan, Zhenxiang Chen, Bo Yang, <b>Chuan Zhao</b>, Mauro Conti. “Detecting Android Malware Leveraging Text Semantics of Network Flows”. Published in <i>IEEE Transactions on Information Forensics and Security</i>. 2017. (CCF-A)
 
-• <b>Chuan Zhao</b>, Han Jiang, Qiuliang Xu, Yilei Wang, Xiaochao Wei, Shujie Cui. “Fast Two-Output Secure Computation with Optimal Error Probability”. Published in <i>Chinese Journal of Electronics （电子学报英文版）</i>. 2017.
+• <b>Chuan Zhao</b>, Han Jiang, Qiuliang Xu, Yilei Wang, Xiaochao Wei, Shujie Cui. “Fast Two-Output Secure Computation with Optimal Error Probability”. Published in <i>Chinese Journal of Electronics（电子学报英文版）</i>. 2017.
 
 • Hao Wang, Debiao He, Jian Shen, Zhihua Zheng, <b>Chuan Zhao</b>, Minghao Zhao. “Verifiable Outsourced Ciphertext-Policy Attribute-Based Encryption in Cloud Computing”. Published in <i>Soft Computing</i>. 2017. (CCF-C)
 
-• <b>Chuan Zhao</b>, Han Jiang, Xiaochao Wei, Qiuliang Xu. “Cut-and-Choose Bilateral Oblivious Transfer (in Chinese)”. Published in <i>Journal of Software （软件学报）</i>. 2017.
+• <b>Chuan Zhao</b>, Han Jiang, Xiaochao Wei, Qiuliang Xu. “Cut-and-Choose Bilateral Oblivious Transfer (in Chinese)”. Published in <i>Journal of Software（软件学报）</i>. 2017.
 
 • <b>Chuan Zhao</b>, Han Jiang, Qiuliang Xu, Xiaochao Wei, Hao Wang. “Several Oblivious Transfer Variants in Cut-and-Choose Scenario”. Published in <i>International Journal of Information Security and Privacy</i>. 2016. (CCF-C)
 
-• Xiaochao Wei, Han Jiang, <b>Chuan Zhao</b>. “An Efficient 1-out-of-n Oblivious Transfer Protocol with Full Simulation (in Chinese)”. Published in <i>Journal of Computer Research and Development （计算机研究与发展）</i>. 2016.
+• Xiaochao Wei, Han Jiang, <b>Chuan Zhao</b>. “An Efficient 1-out-of-n Oblivious Transfer Protocol with Full Simulation (in Chinese)”. Published in <i>Journal of Computer Research and Development（计算机研究与发展）</i>. 2016.
 
 • Yilei Wang, <b>Chuan Zhao</b>, Qiuliang Xu, Zhihua Zheng, Zhenhua Chen, Zhe Liu. “Fair Secure Computation with Reputation Assumptions in the Mobile Social Networks”. Published in <i>Mobile Information Systems</i>. 2015.
 

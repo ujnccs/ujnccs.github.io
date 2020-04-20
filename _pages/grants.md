@@ -14,7 +14,7 @@ redirect_from:
 
 ======
 
-As Principal Investigator
+AS PRINCIPAL INVESTIGATOR:
 
 Jan. 1, 2018 –Dec. 31, 2020
 
@@ -31,7 +31,7 @@ Jan. 1, 2018 –Dec. 31, 2020
 
 ======
 
-As Project Member
+AS PROJECT MEMBER:
 
 Jan. 1, 2019 –Dec. 31, 2021
 

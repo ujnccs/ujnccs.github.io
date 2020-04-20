@@ -14,7 +14,7 @@ redirect_from:
 
 ======
 
-AS PRINCIPAL INVESTIGATOR:
+<b>AS PRINCIPAL INVESTIGATOR</b>
 
 Jan. 1, 2018 –Dec. 31, 2020
 
@@ -31,7 +31,7 @@ Jan. 1, 2018 –Dec. 31, 2020
 
 ======
 
-AS PROJECT MEMBER:
+<b>AS PROJECT MEMBER</b>
 
 Jan. 1, 2019 –Dec. 31, 2021
 
@@ -41,15 +41,6 @@ Jan. 1, 2016 –Dec. 31, 2019
 
 <b>National Natural Science Foundation of China</b>, “Research on Theory of Secure Multi-Party Computation”
 (No. 61572294)
-
-Jan. 1, 2015 –Dec. 31, 2017
-
-Pre-research Project of General ** Department, “Research on Efficient ** Computing on Encrypted
-Data” (No. **)
-
-Jan. 1, 2015 –Dec. 31, 2017
-
-Pre-research Project of General ** Department, “Research on Keywords ** Querying Techniques” (No. **)
 
 Jan. 1, 2012 –Dec. 31, 2015
 

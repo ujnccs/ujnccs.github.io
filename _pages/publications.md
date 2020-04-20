@@ -10,7 +10,7 @@ author_profile: true
 
 ======
 
-SELECTED JOURNALS:
+<b>SELECTED JOURNALS</b>
 
 • <b>Chuan Zhao</b>, Shengnan Zhao, Bo Zhang, Shan Jing, Zhenxiang Chen, Minghao Zhao “Oblivious DFA Evaluation on Joint Input and Its Applications”. Published in <i>Information Sciences</i>. 2020. (CCF-B)
 
@@ -46,7 +46,7 @@ SELECTED JOURNALS:
 
 ======
 
-SELECTED CONFERENCES:
+<b>SELECTED CONFERENCES</b>
 
 • Xiaochao Wei, Han Jiang, <b>Chuan Zhao</b>, Minghao Zhao, Qiuliang Xu. “Fast Cut-and-Choose Bilateral Oblivious Transfer for Malicious Adversaries”. Published in <i>The 15th IEEE International Conference on Trust, Security and Privacy in Computing and Communications</i>. 2016. (CCF-C)
 

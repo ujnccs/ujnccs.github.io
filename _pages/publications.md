@@ -12,6 +12,8 @@ author_profile: true
 
 <b>SELECTED JOURNALS</b>
 
+• Qi Zhao, <b>Chuan Zhao</b>, Shujie Cui, Shan Jing, Zhenxiang Chen “PrivateDL: Privacy‐preserving collaborative deep learning against leakage from gradient sharing”. Published in <i>International Journal of Intelligent Systems</i>. 2020. (CCF-C, IF 10.312)
+
 • <b>Chuan Zhao</b>, Shengnan Zhao, Bo Zhang, Shan Jing, Zhenxiang Chen, Minghao Zhao “Oblivious DFA Evaluation on Joint Input and Its Applications”. Published in <i>Information Sciences</i>. 2020. (CCF-B)
 
 • Jian Qiu, Hengjian Li, <b>Chuan Zhao</b>, “Cancelable Palmprint Templates Based on Random Measurement and Noise Data for Security and Privacy-Preserving Authentication”. Published in <i>Computers & Security</i>. 2019. (CCF-B)
@@ -47,6 +49,11 @@ author_profile: true
 ======
 
 <b>SELECTED CONFERENCES</b>
+
+
+• Sheraz Ali, Muhammad Maaz Irfan, Abubakar Bomai, <b>Chuan Zhao</b> “Towards Privacy-Preserving Deep Learning: Opportunities and Challenges”， Published in <i> The 7th IEEE International Conference on Data Science and Advanced Analytics</i>. 2020. (CCF-C)
+
+• Abubakar Bomai, Mohammed Shujaa Aldeen, <b>Chuan Zhao</b> “Privacy-Preserving GWAS Computation on Outsourced Data Encrypted under Multiple Keys Through Hybrid System”， Published in <i> The 7th IEEE International Conference on Data Science and Advanced Analytics</i>. 2020. (CCF-C)
 
 • Xiaochao Wei, Han Jiang, <b>Chuan Zhao</b>, Minghao Zhao, Qiuliang Xu. “Fast Cut-and-Choose Bilateral Oblivious Transfer for Malicious Adversaries”. Published in <i>The 15th IEEE International Conference on Trust, Security and Privacy in Computing and Communications</i>. 2016. (CCF-C)
 

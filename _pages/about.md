@@ -16,7 +16,7 @@ I am an associate professor at [University of Jinan](http://www.ujn.edu.cn/en/),
 
 My research interests include information security and applied cryptography. Recently, I am focusing on practical secure multi-party computation, privacy-preserving machine learning, and privacy-preserving data analysis.
 
-<span style="color:red;">I am looking for highly motivated graduate students to join us on exciting information security projects! Please feel free to email your CV, TRANSCRIPTS, and PUBLICATIONS to ist.ujn(at)gmail.com for CSC scholarship and Shandong Provincial scholarship opportunities. </span>
+<span style="color:red;">I am looking for highly motivated graduate students to join us on exciting information security projects! Please feel free to email your CV, TRANSCRIPTS, and PUBLICATIONS to ist.ujn(at)gmail.com for CSC Scholarship and Shandong Provincial Scholarship opportunities. </span>
 
 <!--Contact us
 ------

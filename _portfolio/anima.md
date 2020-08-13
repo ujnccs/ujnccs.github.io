@@ -1,4 +1,4 @@
-﻿---
+---
 title: "ELGARNE AMINA "
 excerpt: "Postgraduate<br/><img src='/images/amina.jpg' height='500' width='300'>"
 collection: Postgraduate

@@ -1,0 +1,5 @@
+./img/group.jpg
+./img/cross.jpg
+./img/eating.jpg
+./img/southern_mountain.jpg
+./img/southern_mountain.jpg

@@ -10,7 +10,7 @@
 		this.imgArr = obj.imgArr || [];
 		this.retImgArr = [this.imgArr[this.imgArr.length-1], ...this.imgArr, this.imgArr[0]];
 		this.aniTIme = obj.aniTIme || 1000;
-		this.intervalTime = obj.intervalTime + this.aniTIme || 3000;
+		this.intervalTime = obj.intervalTime + this.aniTIme || 500;
 		this.nowIndex = 0;
 
 		this.swiperListDom = document.getElementsByClassName('swiper-list')[0];

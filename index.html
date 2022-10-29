@@ -1,6 +1,3 @@
-<!--
-    引用远端的css变为本地的css
--->
 <!DOCTYPE html>
 <html lang="en-us">
 
@@ -27,23 +24,6 @@
     <link rel="stylesheet" href="./css/github.min.css">
     <link rel="stylesheet" href="./css/dracula.min.css">
     <link rel="stylesheet" href="./css/leaflet.css">
-
-
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">-->
-<!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"-->
-<!--          integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">-->
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"-->
-<!--          integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">-->
-
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css"-->
-<!--          crossorigin="anonymous" title="hl-light">-->
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css"-->
-<!--          crossorigin="anonymous" title="hl-dark" disabled>-->
-
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css"-->
-<!--          integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="-->
-<!--          crossorigin="anonymous">-->
-
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
@@ -74,45 +54,55 @@
     <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00">
 
     <style>
+        .dropbtn {
+            color: black;
+            padding: 25px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 101px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            text-align: center;   /* 复选框中内容居中 */
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover { color: #FA8072;}  /* 鼠标位置在字体上方的时候变色 */
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            /*background-color: white;*/
+        }
+
         ul {
             padding: 0;
             list-style: none;
-        }
-
-        .swiper-list {
-            width: 600px;
-            height: 450px;
-            margin: 0 auto;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .swiper-main {
-            height: 100%;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .swiper-item {
-            height: 100%;
-            display: inline;
-            position: absolute;
         }
 
         img {
             width: 100%;
             height: 100%;
             display: block;
-        }
-
-        .swiper-spot {
-            width: 100%;
-            height: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            bottom: 10px;
         }
 
         .swiper-spot .spot-item {
@@ -125,24 +115,6 @@
 
         .swiper-spot .spot-item:nth-of-type(1) {
             margin-left: 0;
-        }
-
-        .leftBtn {
-            position: absolute;
-            left: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 30px;
-            height: 30px;
-        }
-
-        .rightBtn {
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 30px;
-            height: 30px;
         }
     </style>
 
@@ -195,17 +167,17 @@
 
 
         <div class="collapse navbar-collapse" id="navbar">
-
-
             <ul class="navbar-nav ml-auto">
 
-
-                <li class="nav-item">
-                    <a class="nav-link " href="#about" data-target="#about"><span>课题组成员</span></a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link " href="#graduate" data-target="#about"><span>毕业生</span></a>
+                <li class="nav-item dropdown">
+                    <a class="dropbtn nav-link">课题组成员</a>
+                    <div class="dropdown-content" style="align-items: center">
+                        <a href="student/third_grade.html">2020级</a>
+                        <a href="student/second_grade.html">2021级</a>
+                        <a href="student/first_grade.html">2022级</a>
+                        <a href="student/overseas_student.html">留学生</a>
+                        <a href="student/graduate.html">毕业生</a>
+                    </div>
                 </li>
 
                 <li class="nav-item">
@@ -257,14 +229,10 @@
             <!--   <div class="swiper-list"></div>      -->
             <div class="col-10 mx-auto col-md-6 order-md-2 hero-media">
                 <img class="hero-img img-fluid" src="img/group_2.png" itemprop="image" alt="Avatar">
-
-
             </div>
 
         </div>
-
         <p></p>
-
     </div>
 </section>
 
@@ -348,2754 +316,6 @@
     </div>
 </section>
 
-<!--  Naeem个人信息模块 -->
-<section id="about-naeem" class="home-section wg-about-naeem   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="img/naeem.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:m_naeem78667@yahoo.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">Naeem</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机科学与技术<br/>
-                    研究兴趣： 隐私保护机器学习<br/>
-                    邮件： m_naeem78667@yahoo.com<br/>
-                    教育经历： (2020.09 – ) 济南大学 信息科学与工程学院硕士<br/>
-                    （2019） Government College University Faisalabad (GCUF), Pakistan<br/>
-                    （2017）Government College University Faisalabad (GCUF), Pakistan<br/>
-                    获奖：China Scholarshop Council (CSC) for Master Degree at UJN
-                </p>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- Maaz个人信息模块 -->
-<section id="about-Maaz" class="home-section wg-about-Maaz   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/mazz.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:muhammadmaazirfan@outlook.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://maazirfan.github.io/me">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">Maaz</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机科学与技术<br/>
-                    研究兴趣： 隐私保护机器学习<br/>
-                    邮件： muhammadmaazirfan@gmail.com<br/>
-                    教育经历： (2018 – ) 济南大学 信息科学与工程学院硕士<br/>
-                    （2012 – 2016）Bechelors in Science Hons in Computer Science Preston University Islamabad
-                    Pakistan<br/>
-                    获奖：China Scholarshop Council (CSC) for Master Degree at UJN<br/>
-                    Deliver two day training on Game development at Arid University Rawalpindy</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- Arslan个人信息模块 -->
-<section id="about-Arslan" class="home-section wg-about-Arslan   ">
-    <div class="container">
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/arslan.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:muhammadarslan1194@outlook.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">Arslan</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机科学与技术<br/>
-                    研究兴趣： 隐私保护机器学习<br/>
-                    邮件： muhammadarslan1194@outlook.com<br/>
-                    教育经历： (2019 – ) 济南大学 信息科学与工程学院硕士<br/>
-                    (2012-2016) Bechelors in Science Hons in Telecommunication Systems Bahauddin Zakariya University,
-                    Multan, Pakistan<br/>
-                    获奖： China Scholarshop Council (CSC) for Master Degree at UJN<br/>
-                    Chief Minister Shahbaz Sharif Laptop Scheme</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- Aqib Bajwa个人信息模块-->
-<section id="about-Aqib-Bajwa" class="home-section wg-about-Aqib-Bajwa   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/Aqib_Bajwa.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:bcs.f15.12@pujc.edu.pk">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">Aqib Bajwa</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机科学与技术<br/>
-                    研究兴趣： 安全多方计算<br/>
-                    邮件： bcs.f15.12@pujc.edu.pk<br/>
-                    教育经历： (2019.09 – ) 济南大学 信息科学与工程学院硕士<br/>
-                    （2015.10 – 2019.07）Department of Information Technology University of the Punjab, Jhelum Campus,
-                    Punjab, Pakistan<br/>
-                    获奖： China Scholarshop Council (CSC) for Master Degree at UJN<br/>
-                    Prime Minister's Laptop Scheme - HEC</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- Sheraz个人信息模块 -->
-<section id="about-Sheraz" class="home-section wg-about-Sheraz   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/sheraz.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:sherza@gmail.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">Sheraz</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机科学与技术<br/>
-                    研究兴趣： 隐私保护机器学习<br/>
-                    邮件： sherza@gmail.com<br/>
-                    教育经历： (2018 – ) 济南大学 信息科学与工程学院硕士<br/>
-                    （2012 – 2016）Bechelors in Science Hons in Computer Science University of the Punjab, Pakistan<br/>
-                    获奖：China Scholarshop Council (CSC) for Master Degree at UJN<br/>
-                    PEEF scholarship in Bachelor<br/>
-                    Merit scholarship in Bachelor<br/>
-                    Chief Menister Shahbaz Shareef Laptop Scheme</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- Amina个人信息模块 -->
-<section id="about-amina" class="home-section wg-about-amina   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/amina.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:amina.elgarne@gmail.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">Amina</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机科学与技术<br/>
-                    研究兴趣： 隐私保护数据分析<br/>
-                    邮件： amina.elgarne @gmail.com<br/>
-                    教育经历： (2020.09 – ) 济南大学 信息科学与工程学院硕士<br/>
-                    （2019-2020）Professional Bachelor in Environmental Modeling and Management。<br/>
-                    （2015-2016）Specialized Technician Diploma in Automated System at the Automotive Industry Training
-                    Institute in Casablanca。<br/>
-                    （2013-2014）1st year at the SAFI multidisciplinary faculty in mathematical science and applied
-                    computing。<br/>
-                    （2012-2013）Baccalaureate in Mathematical Science with honors</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 何章钊个人信息模块 -->
-<section id="about-ZhangZhaoHe" class="home-section wg-about-ZhangZhaoHe   ">
-    <div class="container">
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/zhangzhaohe.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:1426921467@qq.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">何章钊</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 隐私保护FPGA加速机器学习<br/>
-                    邮件： 1426921467@qq.com<br/>
-                    教育经历： (2020 – ) 济南大学 信息科学与工程学院硕士<br/>
-                    （2016 – 2020）山东建筑大学 计算机科学与技术学院学士<br/>
-                    获奖：山东建筑大学二等奖学金<br/>
-                    济南大学二等奖学金</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 徐俊个人信息模块 -->
-<section id="XuJun" class="home-section wg-XuJun   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/xujun.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:asdxj12581@163.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">徐俊</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 安全多方计算、公开可验证技术<br/>
-                    邮件： asdxj12581@163.com<br/>
-                    教育经历： (2020 – ) 济南大学 信息科学与工程学院硕士<br/>
-                    （2016 – 2020）郑州轻工业大学 数学与信息科学学院学士<br/>
-                    获奖：郑州轻工业大学一等奖学金（2017）<br/>
-                    国家励志奖学金（2018）</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 王林个人信息模块 -->
-<section id="LinWang" class="home-section wg-LinWang   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/wanglin.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:yancy_wl@163.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">王林</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 区块链、边缘学习<br/>
-                    邮件： yancy_wl@163.com<br/>
-                    教育经历： (2020 – ) 济南大学 信息科学与工程学院硕士<br/>
-                    （2016 – 2020）山东科技大学 信息工程系学士<br/>
-                    获奖：山东科技大学二等奖学金（2016-2017）<br/>
-                    长丰杯大数据分析与采矿比赛山东省三等奖（2018.10）</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 解集润个人信息模块 -->
-<section id="about-jirun" class="home-section wg-about-jirun   ">
-    <div class="container">
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/jirun.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:761247293@qq.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">解集润</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 基于SDN的链路洪泛攻击<br/>
-                    邮件： 761247293@qq.com<br/>
-                    教育经历： (2020 – ) 济南大学 信息科学与工程学院硕士<br/>
-                    （2016 – 2020）济南大学 信息科学与工程学院学士</p>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 张雪个人信息模块 -->
-<section id="ZhangXue" class="home-section wg-XueZhang   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/zhangxue.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:1713652654@qq.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">张雪</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 基于SDN的确定性网络<br/>
-                    邮件： 1713652654@qq.com<br/>
-                    教育经历： (2020 – ) 济南大学 信息科学与工程学院硕士<br/>
-                    （2018 – 2020）滨州学院 信息工程学院互联网学院学士<br/>
-                    获奖：滨州学院一等奖学金（2020 – 2021）<br/>
-                    济南大学一等奖学金（2018 – 2019）</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 商瑜个人信息模块 -->
-<section id="ShangYu" class="home-section wg-ShangYu   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/shangyu.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:sy03plus@163.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">商瑜</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 隐私集合求交<br/>
-                    邮件： sy03plus@163.com<br/>
-                    教育经历： （2021-）济南大学 信息科学与工程学院硕士<br/>
-                    （2016 – 2020）济南大学 信息科学与工程学院学士<br/>
-                    获奖：
-                    济南大学二等奖学金</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 王谦个人信息模块 -->
-<section id="WangQian" class="home-section wg-WangQian   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/wangqian.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:2510702932@qq.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">王谦</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机科学与技术<br/>
-                    研究兴趣： 安全多方计算<br/>
-                    邮件： 2510702932@qq.com<br/>
-                    教育经历： （2021-）济南大学 信息科学与工程学院硕士<br/>
-                    （2017 – 2021）济南大学 信息科学与工程学院学士<br/>
-                    获奖：
-                    济南大学奖学金（2017-2018，2018-2019，2019-2020）<br/>
-                    济南大学优秀学生（2017-2018）<br/>
-                    济南大学优秀学生干部（2018-2019）</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 王豪个人信息模块 -->
-<section id="WangHao" class="home-section wg-WangHao   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/wanghao.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:wh0890@163.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">王豪</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 隐私保护FPGA加速机器学习<br/>
-                    邮件： wh0890@163.com<br/>
-                    教育经历： （2021-）济南大学 信息科学与工程学院硕士<br/>
-                    （2019 – 2021）山东科技大学 智能装备学院学士<br/>
-                    获奖：
-                    山东科技大学二等奖学金（2019-2020）<br/>
-                    “外研社”杯全国英语写作大赛山东省二等奖</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 韩松个人信息模块 -->
-<section id="HanSong" class="home-section wg-HanSong   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/hansong.png" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:352936806@qq.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">韩松</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 隐私保护机器学习<br/>
-                    邮件： 352936806@qq.com<br/>
-                    教育经历： （2021-）济南大学 信息科学与工程学院硕士<br/>
-                    （2015 – 2019）华北科技学院(现应急管理大学)学士<br/>
-                    获奖：
-                    华北科技学院三等奖学金（2017）<br/>
-                    华北科技学院一等奖学金（2018）</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 孙奎恒个人信息模块 -->
-<section id="KuiHeng" class="home-section wg-KuihengSun   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/kuiheng.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:2980481799@qq.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">孙奎恒</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机科学与技术<br/>
-                    研究兴趣： 区块链<br/>
-                    邮件： 2980481799@qq.com<br/>
-                    教育经历： （2021-）济南大学 信息科学与工程学院硕士<br/>
-                    （2017-2021）济南大学 网络工程系学士<br/>
-                    获奖：
-                    中国高校计算机大赛-2019网络技术挑战赛三等奖（2019.08）<br/>
-                    中国高校计算机大赛-2020网络技术挑战赛 三等奖（2020.08）<br/>
-                    第十七届山东省大学生软件设计大赛 三等奖（2019）</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 郝非凡个人信息模块 -->
-<section id="HaoFeiFan" class="home-section wg-FeifanHao   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/haofeifan.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:m17860562057@163.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">郝非凡</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 软件定义网络<br/>
-                    邮件： m17860562057@163.com<br/>
-                    教育经历： （2021-）济南大学 信息科学与工程学院硕士<br/>
-                    （2017-2021）齐鲁师范学院 信息科学与工程学院学士<br/>
-                    获奖：
-                    济南大学三等奖学金（2021）</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 吴昊个人信息模块 -->
-<section id="WuHao" class="home-section WuHao   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/wuhao.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:2294947298@qq.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">吴昊</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 电子信息<br/>
-                    研究兴趣： 隐私计算<br/>
-                    邮件： wuh0714@gmail.com<br/>
-                    教育经历： （2021-）济南大学 信息科学与工程学院硕士<br/>
-                    （2017-2021） 济南大学 网络工程系学士<br/>
-                    获奖：
-                    济南大学一等奖学金（2019）<br/>
-                    济南大学二等奖学金（2020）<br/>
-                    中国高校计算机大赛2020年微信小程序应用开发赛华东赛区三等奖<br/>
-                    第十一届山东省大学生数学竞赛二等奖<br/>
-                    中国高校计算机大赛2021年网络技术挑战赛华东赛区二等奖</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 郭雷个人信息模块 -->
-<section id="郭雷" class="home-section wg-GuoLei   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/guolei.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:guolei_ujn@163.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">郭雷</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 软件定义网络<br/>
-                    邮件： guolei_ujn@163.com<br/>
-                    教育经历： （2021-）济南大学 信息科学与工程学院硕士<br/>
-                    （2017-2021）济南大学 网络工程系学士<br/>
-                    获奖：
-                    中国高校计算机大赛-2019网络技术挑战赛 三等奖（2019.08）<br/>
-                    第十二届全国大学生数学竞赛 二等奖（2020）<br/>
-                    省政府奖学金（2019-2020）（2019-2020）</p>
-
-
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- 张文秀个人信息模块 -->
-<section id="WenXiu" class="home-section wg-WenxiuZhang   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/wenxiu.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:zwx925925@163.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">张文秀</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 软件定义网络<br/>
-                    邮件： zwx925925@163.com<br/>
-                    教育经历： （2021-）济南大学 信息科学与工程学院硕士<br/>
-                    （2019 – 2021）山东科技大学 智能装备学院学士<br/>
-                    获奖：
-                    山东科技大学一等奖学金（2019-2020）<br/>
-                    2021网络技术挑战赛华东赛区二等奖</p>
-
-
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- 高丽个人信息模块 -->
-<section id="GaoLi" class="home-section wg-GaoLi   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/gaoli.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:zwx925925@163.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">高丽</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 零知识证明<br/>
-                    邮件： gaol0513@163.com<br/>
-                    教育经历： （2022-）济南大学 信息科学与工程学院硕士<br/>
-                    （2018 – 2022）济南大学 化学化工学院学士<br/>
-                    获奖： 济南大学三等奖学金（2021-2022）<br/>
-                    济南大学二等奖学金（2018-2019）<br/></p>
-
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- 魏宇楠个人信息模块 -->
-<section id="WeiYuNan" class="home-section wg-YunanWei   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/yunan.png" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:zwx925925@163.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">魏宇楠</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机科学与技术<br/>
-                    研究兴趣： 多方安全计算<br/>
-                    邮件： 15607632720@163.com<br/>
-                    教育经历： （2022-）济南大学 信息科学与工程学院硕士<br/>
-                    （2020-2022）西安电子科技大学 电子封装技术 第二学士<br/>
-                    （2016-2020）海南师范大学 计算机科学与技术 学士<br/>
-                    获奖：
-                    海南师范大学奖学金（2016-2019）<br/>
-                    海南师范大学优秀学生干部、优秀共青团员（2016-2017）、优秀毕业生<br/>
-                    西安电子科技大学优秀毕业论文<br/>
-                    2019 中国大学生计算机设计大赛 国家级三等奖<br/>
-                    2019 中国高校计算机大赛 团体程序设计天梯赛 省级二等奖<br/></p>
-
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- 李佳瑶个人信息模块 -->
-<section id="LiJiaYao" class="home-section wg-JiayaoLi   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/jiayao.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:zwx925925@163.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">李佳瑶</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机科学与技术<br/>
-                    研究兴趣： 区块链技术<br/>
-                    邮件： 1974530794@qq.com<br/>
-                    教育经历： （2022-）济南大学 信息科学与工程学院硕士<br/>
-                    （2018 – 2022）山东工商学院 网络工程学士<br/>
-                    获奖：
-                    山东工商学院奖学金<br/>
-                    山东工商学院校级优秀学生（2019-2020，2020-2021）<br/></p>
-
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- 田洋个人信息模块 -->
-<section id="TianYang" class="home-section wg-TianYang   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/tianyang.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:zwx925925@163.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">田洋</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 隐私计算<br/>
-                    邮件： 574112100@qq.com<br/>
-                    教育经历： （2022-）济南大学 信息科学与工程学院硕士<br/>
-                    （2018 – 2022）济南大学 信息科学与工程学院学士<br/>
-                    获奖：
-                    济南大学优秀毕业生（2022）<br/>
-                    济南大学奖学金<br/>
-                    济南大学优秀学生干部<br/></p>
-
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- 孔繁星个人信息模块 -->
-<section id="FanXingKong" class="home-section wg-FanXingKong   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/fanxing.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:zwx925925@163.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">孔繁星</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 电子信息<br/>
-                    研究兴趣： 隐私保护FPGA加速机器学习<br/>
-                    邮件： kfx18396881003@163.com<br/>
-                    教育经历： （2022-）济南大学 信息科学与工程学院硕士<br/>
-                    （2018 – 2022）德州学院 物理与电子信息学院学士<br/></p>
-
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- 林宇成个人信息模块 -->
-<section id="YuChengLin" class="home-section wg-YuChengLin   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/yucheng.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:zwx925925@163.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">林宇成</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机科学与技术<br/>
-                    研究兴趣： 隐私保护机器学习<br/>
-                    邮件： 1074292290@qq.com<br/>
-                    教育经历： （2022-）济南大学 信息科学与工程学院硕士<br/>
-                    （2018 – 2022）广东财经大学 统计与数学学院学士<br/>
-                    获奖：全国大学生数学建模竞赛广东省二等奖（2019）<br/>
-                    全国大学生数学建模竞赛广东省一等奖（2020）<br/>
-                    粤港澳金融数学建模竞赛二等奖（2020）<br/></p>
-
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- 张惠子个人信息模块 -->
-<section id="HuiZiZhang" class="home-section wg-HuiZiZhang   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/huizi.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:zwx925925@163.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">张惠子</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 隐私保护集合求交<br/>
-                    邮件： 943908736@qq.com<br/>
-                    教育经历： （2022-）济南大学 信息科学与工程学院硕士<br/>
-                    （2018 – 2022）济南大学 信息科学与工程学院学士<br/>
-                    获奖：
-                    获奖：济南大学奖学金（2018-2019、2020-2021、2021-2022）<br/>
-                    济南大学优秀学生干部（2018-2019、2020-2021、2021-2022）<br/>
-                    济南大学优秀团干部（2018-2019、2019-2020、2020-2021、2021-2022）<br/></p>
-
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- 沈平章个人信息模块 -->
-<section id="PingZhangShen" class="home-section wg-PingZhangShen   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/pingzhang.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:zwx925925@163.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">沈平章</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机科学与技术<br/>
-                    研究兴趣： 安全多方计算<br/>
-                    邮件： 2579476386@qq.com<br/>
-                    教育经历： （2022-）济南大学 信息科学与工程学院硕士<br/>
-                    （2018 – 2022）山东科技大学 计算机科学与工程学院学士<br/></p>
-
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- 卢世猛个人信息模块 -->
-<section id="ShiMengLu" class="home-section wg-ShimengLu   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/shimeng.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:zwx925925@163.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">卢世猛</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 隐私保护集合求交<br/>
-                    邮件： lushimeng2021@163.com<br/>
-                    教育经历： （2022-）济南大学 信息科学与工程学院硕士<br/>
-                    （2018 – 2022）西南石油大学 计算机科学学院学士<br/>
-                    获奖： 西南石油大学奖学金（2019-2022）<br/>
-                    西南石油大学三好学生、优秀共青团员（2019）<br/>
-                    第十五届四川省大学生计算机作品赛三等奖（2020）<br/>
-                    2022届四川省优秀大学毕业生<br/></p>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!--  毕业生信息模块 -->
-<!-- 毕业生Bomai个人信息模块 -->
-<section id="graduate" class="home-section wg-about-bomai   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/bomai.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:bomai02@gmail.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">Bomai</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机科学与技术<br/>
-                    研究兴趣： 隐私保护基因组分析<br/>
-                    邮件： bomai02@gmail.com<br/>
-                    教育经历： (2018 – 2021) 济南大学 信息科学与工程学院硕士<br/>
-                    （2012 – 2016）Bachelor in Computer Engineering, Gediz University, Turkey<br/>
-                    获奖：UJN Presidential scholarship for Master degree<br/>
-                    毕业去向： Nigerian government at Nigeria Electricity Liability Management Limited as an ICT Technician.
-                </p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 毕业生赵埼个人信息模块 -->
-<section id="about-QiZhao" class="home-section wg-about-QiZhao   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/zhaoqi.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:zhaoqiisme@gmail.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">赵埼</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 隐私保护机器学习<br/>
-                    邮件： zhaoqiisme@gmail.com<br/>
-                    教育经历： (2018 – 2021) 济南大学 信息科学与工程学院硕士<br/>
-                    （2014 – 2018）南京邮电大学 通达学院互联网学院学士<br/>
-                    获奖：TD / NJUPT二等奖学金（2014、2015、2016）<br/>
-                    毕业去向：南通农商银行</p>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 毕业生张谦个人信息模块 -->
-<section id="about-QianZhang" class="home-section wg-about-QianZhang   ">
-    <div class="container">
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/zhangqian.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:15854472509@qq.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">张谦</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 联邦学习<br/>
-                    邮件： 15854472509@163.com<br/>
-                    教育经历： (2018 – 2021) 济南大学 信息科学与工程学院硕士<br/>
-                    （2014 – 2018）潍坊学院 计算机科学与工程学院学士<br/>
-                    获奖：SDWU三等奖学金（2015 – 2016）<br/>
-                    学生会优秀成员（2015.06）<br/>
-                    毕业去向：中国联合网络通信有限公司潍坊市分公司</p>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 毕业生Aladdin个人信息模块 -->
-<section id="about-aladdin" class="home-section wg-about-aladdin   ">
-    <div class="container">
-
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/aladdin.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:mohdshogaa1@gmail.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">Aladdin</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机科学与技术<br/>
-                    研究兴趣： 隐私保护基因组分析<br/>
-                    邮件： mohdshogaa1@gmail.com<br/>
-                    教育经历： (2019 – 2022) 济南大学 信息科学与工程学院硕士<br/>
-                    (2015 - 2019) Bechelors in Electrical Engineering and Automation Zhejiang University of Technology
-                    Hangzhou China<br>
-                    获奖： China Scholarshop Council (CSC) for Master Degree at UJN<br/>
-                    毕业去向：同济大学攻读博士学位</p>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 毕业生贾海鑫个人信息模块 -->
-<section id="about-HaixinJia" class="home-section wg-about-HaixinJia   ">
-    <div class="container">
-
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
-            <div class="col-lg-5">
-                <div id="profile">
-
-
-                    <img class="img-fluid" src="./img/haixin.jpg" itemprop="image" alt="Avatar">
-
-                </div>
-                <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="mailto:1026092107@qq.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="ai ai-google-scholar"></i>
-                        </a>
-                    </li>
-
-
-                    <li class="mx-3">
-                        <a itemprop="sameAs" href="https://ujnccs.github.io/">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-lg-7" itemprop="description">
-
-                <div class="portrait-title">
-                    <h2 itemprop="name">贾海鑫</h2>
-                    <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组研究生,</h3>
-
-
-                    <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-
-                        <span itemprop="name">济南大学信息科学与工程学院</span>
-
-                    </h3>
-
-                </div>
-
-                <link itemprop="url" href="">
-
-
-                <p>专业： 计算机技术<br/>
-                    研究兴趣： 隐私保护基因组数据分析<br/>
-                    邮件： 1026092107@qq.com<br/>
-                    教育经历： (2019 – 2022) 济南大学 信息科学与工程学院硕士<br/>
-                    （2015 – 2019）济南大学 信息科学与工程学院学士<br/>
-                    毕业去向：中国矿业大学攻读博士学位</p>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- 能力模块 -->
-<section id="skills" class="home-section wg-featurette   ">
-    <div class="container">
-
-        <div class="row featurette">
-
-            <div class="col-12 section-heading">
-                <h1>能力</h1>
-                <p>课题组注重培养创新思维、批判性思维、团队协作、实践应用等能力</p>
-            </div>
-
-            <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-                <div class="position-relative py-2 shadow featurette-margin">
-                    <div class="progress-bar" style="width:"></div>
-                    <div class="featurette-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>创新思维</h3>
-
-                </div>
-            </div>
-
-
-            <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-                <div class="position-relative py-2 shadow featurette-margin">
-                    <div class="progress-bar" style="width:"></div>
-                    <div class="featurette-icon"><i class="fas fa-user-secret"></i></div>
-                    <h3>批判性思维</h3>
-
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-                <div class="position-relative py-2 shadow featurette-margin">
-                    <div class="progress-bar" style="width:"></div>
-                    <div class="featurette-icon"><i class="fas fa-user"></i></div>
-                    <h3>团队协作</h3>
-
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-                <div class="position-relative py-2 shadow featurette-margin">
-                    <div class="progress-bar" style="width:"></div>
-                    <div class="featurette-icon"><i class="fab fa-searchengin"></i></div>
-                    <h3>实践应用</h3>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
 
 
 <!-- 科研项目模块 -->
@@ -3172,14 +392,11 @@
             <div class="col-12 section-heading text-center">
                 <h1> 科研成果</h1>
                 <p>像蜗牛一样慢慢前行</p>
-
-
             </div>
             <div class="col-12">
                 <div class="row justify-content-center">
-			
-		
-		<div class="view-list-item col-lg-8 mx-auto" itemscope
+
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope
                          itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
                         <a href="https://www.hindawi.com/journals/scn/2022/9428610/"
@@ -3192,7 +409,6 @@
                         </div>
                     </div>
 
-			
 
                     <div class="view-list-item col-lg-8 mx-auto" itemscope
                          itemtype="http://schema.org/ScholarlyArticle">
@@ -3206,8 +422,8 @@
                         <div class="btn-links">
                         </div>
                     </div>
-			
-			
+
+
                     <div class="view-list-item col-lg-8 mx-auto" itemscope
                          itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
@@ -3218,9 +434,7 @@
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>赵川</a></span>, <span
                                 itemprop="author name" itemtype="http://schema.org/Person"><a>徐俊</a></span>
                         </div>
-
                         <div class="btn-links">
-
                         </div>
                     </div>
 
@@ -3230,7 +444,6 @@
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
                         <a href="https://www.sciencedirect.com/science/article/pii/S0020025520302462"
                            itemprop="url"><span itemprop="name">Oblivious DFA evaluation on joint input and its applications</span></a>
-
                         <div class="article-metadata" itemprop="author">
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Chuan Zhao</a></span>,
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Shengnan Zhao</a></span>,
@@ -3240,37 +453,29 @@
                                   itemtype="http://schema.org/Person"><a>Zhenxiang Chen</a></span>, <span
                                 itemprop="author name" itemtype="http://schema.org/Person"><a>Minghao Zhao</a></span>
                         </div>
-
                         <div class="btn-links">
-
                         </div>
-
-
                     </div>
+
 
                     <div class="view-list-item col-lg-8 mx-auto" itemscope
                          itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
                         <a href="https://onlinelibrary.wiley.com/doi/10.1002/int.22241" itemprop="url"><span
                                 itemprop="name">PrivateDL: Privacy‐preserving collaborative deep learning against leakage from gradient sharing</span></a>
-
                         <div class="article-metadata" itemprop="author">
-
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Qi Zhao</a></span>,
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Chuan Zhao</a></span>,
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Shujie Cui</a></span>,
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Shan Jing</a></span>,
                             <span itemprop="author name"
                                   itemtype="http://schema.org/Person"><a>Zhenxiang Chen</a></span>
-
                         </div>
-
                         <div class="btn-links">
-
                         </div>
-
-
                     </div>
+
+
 
                     <div class="view-list-item col-lg-8 mx-auto" itemscope
                          itemtype="http://schema.org/ScholarlyArticle">
@@ -3278,20 +483,16 @@
                         <a href="https://www.sciencedirect.com/science/article/pii/S0167404818306618"
                            itemprop="url"><span itemprop="name">Cancelable Palmprint Templates Based on Random Measurement and Noise Data for Security and Privacy-Preserving Authentication
 </span></a>
-
                         <div class="article-metadata" itemprop="author">
-
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Jian Qiu</a></span>,
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Hengjian Li</a></span>,
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Chuan Zhao</a></span>
-
                         </div>
                         <div class="btn-links">
-
                         </div>
-
-
                     </div>
+
+
 
                     <div class="view-list-item col-lg-8 mx-auto" itemscope
                          itemtype="http://schema.org/ScholarlyArticle">
@@ -3302,13 +503,10 @@
                         <div class="article-metadata" itemprop="author">
                             <a>Minghao Zhao, Chengyu Hu, Xiangfu Song, Chuan Zhao</a>
                         </div>
-
                         <div class="btn-links">
-
                         </div>
-
-
                     </div>
+
 
                     <div class="view-list-item col-lg-8 mx-auto" itemscope
                          itemtype="http://schema.org/ScholarlyArticle">
@@ -3319,11 +517,10 @@
                         <div class="article-metadata" itemprop="author">
                             <a>Chuan Zhao, Shengnan Zhao, Minghao Zhao, Chong-Zhi Gao, Hongwei Li, Yu-an Tan</a>
                         </div>
-
                         <div class="btn-links">
-
                         </div>
                     </div>
+
 
                     <div class="view-list-item col-lg-8 mx-auto" itemscope
                          itemtype="http://schema.org/ScholarlyArticle">
@@ -3333,11 +530,11 @@
                         <div class="article-metadata" itemprop="author">
                             <a>Chuan Zhao, Shengnan Zhao, Zhongtian Jia, Bo Zhang, Bin Zhang</a>
                         </div>
-
                         <div class="btn-links">
-
                         </div>
                     </div>
+
+
 
                     <div class="view-list-item col-lg-8 mx-auto" itemscope
                          itemtype="http://schema.org/ScholarlyArticle">
@@ -3348,11 +545,11 @@
                         <div class="article-metadata" itemprop="author">
                             <a>Chuan Zhao, Shengnan Zhao, Zhenxiang Chen, Bo Zhang, Mauro Conti</a>
                         </div>
-
                         <div class="btn-links">
-
                         </div>
                     </div>
+
+
 
                     <div class="view-list-item col-lg-8 mx-auto" itemscope
                          itemtype="http://schema.org/ScholarlyArticle">
@@ -3363,26 +560,25 @@
                         <div class="article-metadata" itemprop="author">
                             <a>Bo Zhang, Tianqing Zhu, Chengyu Hu, Chuan Zhao</a>
                         </div>
-
                         <div class="btn-links">
-
                         </div>
                     </div>
+
+
 
                     <div class="view-list-item col-lg-8 mx-auto" itemscope
                          itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
                         <a href="https://www.researchgate.net/publication/329224040_Cryptanalysis_of_a_Lightweight_Certificateless_Signature_Scheme_for_IIOT_Environments"
                            itemprop="url"><span itemprop="name">An Efficient Certificateless Generalized Signcryption Scheme</span></a>
-
                         <div class="article-metadata" itemprop="author">
                             <a>Bo Zhang, Zhongtian Jia, Chuan Zhao</a>
                         </div>
-
                         <div class="btn-links">
-
                         </div>
                     </div>
+
+
 
                     <div class="view-list-item col-lg-8 mx-auto" itemscope
                          itemtype="http://schema.org/ScholarlyArticle">
@@ -3392,11 +588,11 @@
                         <div class="article-metadata" itemprop="author">
                             <a>Shanshan Wang, Qiben Yan, Zhenxiang Chen, Bo Yang, Chuan Zhao</a>
                         </div>
-
                         <div class="btn-links">
-
                         </div>
                     </div>
+
+
 
                     <div class="view-list-item col-lg-8 mx-auto" itemscope
                          itemtype="http://schema.org/ScholarlyArticle">
@@ -3407,11 +603,11 @@
                         <div class="article-metadata" itemprop="author">
                             <a>Chuan Zhao, Han Jiang, Qiuliang Xu, Yilei Wang, Xiaochao Wei, Shujie Cui</a>
                         </div>
-
                         <div class="btn-links">
-
                         </div>
                     </div>
+
+
 
                     <div class="view-list-item col-lg-8 mx-auto" itemscope
                          itemtype="http://schema.org/ScholarlyArticle">
@@ -3422,11 +618,11 @@
                         <div class="article-metadata" itemprop="author">
                             <a>Hao Wang, Debiao He, Jian Shen, Zhihua Zheng, Chuan Zhao, Minghao Zhao</a>
                         </div>
-
                         <div class="btn-links">
-
                         </div>
                     </div>
+
+
 
                     <div class="view-list-item col-lg-8 mx-auto" itemscope
                          itemtype="http://schema.org/ScholarlyArticle">
@@ -3746,13 +942,10 @@
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
                         <a href="https://www.hindawi.com/journals/misy/2015/637458/" itemprop="url"><span
                                 itemprop="name">Fair Secure Computation with Reputation Assumptions in the Mobile Social Networks</span></a>
-
                         <div class="article-metadata" itemprop="author">
                             <a>Y Wang, C Zhao, Q Xu, Z Zheng, Z Chen, Z Liu</a>
                         </div>
-
                         <div class="btn-links">
-
                         </div>
                     </div>
 
@@ -3762,7 +955,7 @@
     </div>
 </section>
 
-
+<!-- 论文分享模块 -->
 <section id="projects" class="home-section wg-portfolio   ">
     <div class="container">
 
@@ -3774,14 +967,10 @@
 
             </div>
             <div class="col-12">
-
-
                 <div class="isotope projects-container js-layout-masonry ">
-
 
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
-
 
                             <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&amp;mid=2247483756&amp;idx=3&amp;sn=c6c9805559c839fc47701b618e16aeb4&amp;chksm=c0ddff59f7aa764f77c4046e71308e2a7702a90eb7d253f62eea5d9fd82454337b4eb985fd1c&amp;sessionid=0&amp;scene=126&amp;clicktime=1614062249&amp;enterid=1614062249&amp;ascene=3&amp;devicetype=android-27&amp;version=2700163b&amp;nettype=WIFI&amp;abtest_cookie=AAACAA%3D%3D&amp;lang=zh_CN&amp;exportkey=AXh7vDaZnknCYecJz3%2Fve3o%3D&amp;pass_ticket=DvIEhcrSaTfhehgLiblPxufqjstjeqf8OpaZCu8YdW45hkmr%2F8O2qQkR42fomVYS&amp;wx_header=1"
                                target="_blank" rel="noopener" class="card-image">
@@ -3801,8 +990,6 @@
 
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
-
-
                             <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&amp;mid=2247483720&amp;idx=3&amp;sn=3be69d02ad6784074a3d3c63a2fc4708&amp;chksm=c0ddff7df7aa766b05098119f7d5ff504e705582afe095377df8899c78db83ae620025b8f19e&amp;sessionid=0&amp;scene=126&amp;clicktime=1614071534&amp;enterid=1614071534&amp;ascene=3&amp;devicetype=android-27&amp;version=2700163b&amp;nettype=WIFI&amp;abtest_cookie=AAACAA%3D%3D&amp;lang=zh_CN&amp;exportkey=ASzkXM93Fcv2OBqgwPRcObE%3D&amp;pass_ticket=DvIEhcrSaTfhehgLiblPxufqjstjeqf8OpaZCu8YdW45hkmr%2F8O2qQkR42fomVYS&amp;wx_header=1"
                                target="_blank" rel="noopener" class="card-image">
                                 <img src="./project/deep-learning/featured.jpg" alt="" class="img-responsive">
@@ -3817,10 +1004,9 @@
                         </div>
                     </div>
 
+
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
-
-
                             <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&amp;mid=2247483756&amp;idx=1&amp;sn=70d980795f1681855e7f431e23a29f3e&amp;chksm=c0ddff59f7aa764f194bc3c31b78c605d55aef5c9008a697184e72c31e5bc7d8b95ee133bdf3&amp;sessionid=0&amp;scene=126&amp;clicktime=1614071884&amp;enterid=1614071884&amp;ascene=3&amp;devicetype=android-27&amp;version=2700163b&amp;nettype=WIFI&amp;abtest_cookie=AAACAA%3D%3D&amp;lang=zh_CN&amp;exportkey=ATAnrvb%2FFxjKUOteSDPFiKc%3D&amp;pass_ticket=DvIEhcrSaTfhehgLiblPxufqjstjeqf8OpaZCu8YdW45hkmr%2F8O2qQkR42fomVYS&amp;wx_header=1"
                                target="_blank" rel="noopener" class="card-image">
                                 <img src="./project/artificial-intelligence/featured_hu9f0bbcf77d555e2a865a9c160397aa16_44493_550x0_resize_q90_lanczos.jpg"
@@ -3836,10 +1022,9 @@
                         </div>
                     </div>
 
+
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
-
-
                             <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247483720&idx=1&sn=e956e54097b2c1251147d9c13e0fcfe4&chksm=c0ddff7df7aa766be316385bd3c576a0d6c1f95ab99b1331b8316c395a58424c596aeab89b79&xtrack=1&scene=0&subscene=10000&clicktime=1614504953&enterid=1614504953&ascene=7&devicetype=android-27&version=2700163b&nettype=cmnet&abtest_cookie=AAACAA%3D%3D&lang=zh_CN&exportkey=AYZ167HFAaTMXCQ%2FOYPOztM%3D&pass_ticket=55GvE0NBTonFuoDrfjLuBoEbx%2BP1zoSyHtjjR%2FDqKwgKVJ15UzXbzvOI8A2yIWrt&wx_header=1"
                                target="_blank" rel="noopener" class="card-image">
                                 <img src="./project/ml.png" alt="" class="img-responsive">
@@ -3854,10 +1039,9 @@
                         </div>
                     </div>
 
+
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
-
-
                             <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247483720&idx=2&sn=6e41a1d0a73d6934adf190e402015bb9&chksm=c0ddff7df7aa766bfd6b47a9a029fe8c3cc93a97af5e2d3dab63907512c666f935dbbdc668d4&xtrack=1&scene=0&subscene=10000&clicktime=1614505367&enterid=1614505367&ascene=7&devicetype=android-27&version=2700163b&nettype=cmnet&abtest_cookie=AAACAA%3D%3D&lang=zh_CN&exportkey=AfY1bhS6jxp2UMmFOQpXzog%3D&pass_ticket=55GvE0NBTonFuoDrfjLuBoEbx%2BP1zoSyHtjjR%2FDqKwgKVJ15UzXbzvOI8A2yIWrt&wx_header=1"
                                target="_blank" rel="noopener" class="card-image">
                                 <img src="./project/op.png" alt="" class="img-responsive">
@@ -3875,8 +1059,6 @@
 
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
-
-
                             <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247483720&idx=2&sn=6e41a1d0a73d6934adf190e402015bb9&chksm=c0ddff7df7aa766bfd6b47a9a029fe8c3cc93a97af5e2d3dab63907512c666f935dbbdc668d4&xtrack=1&scene=0&subscene=10000&clicktime=1614505367&enterid=1614505367&ascene=7&devicetype=android-27&version=2700163b&nettype=cmnet&abtest_cookie=AAACAA%3D%3D&lang=zh_CN&exportkey=AfY1bhS6jxp2UMmFOQpXzog%3D&pass_ticket=55GvE0NBTonFuoDrfjLuBoEbx%2BP1zoSyHtjjR%2FDqKwgKVJ15UzXbzvOI8A2yIWrt&wx_header=1"
                                target="_blank" rel="noopener" class="card-image">
                                 <img src="./project/hw.png" alt="" class="img-responsive">
@@ -3891,10 +1073,9 @@
                         </div>
                     </div>
 
+
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
-
-
                             <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247493711&idx=3&sn=d9c2d4a80554279277772fed02ece398&chksm=c0de167af7a99f6cd3bff2e70281ce3190fc4663b28c031c4391c80650a5d85535ca6f4e8047&token=900185501&lang=zh_CN#rd"
                                target="_blank" rel="noopener" class="card-image">
                                 <img src="./project/fl.png" alt="" class="img-responsive">
@@ -3909,10 +1090,9 @@
                         </div>
                     </div>
 
+
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
-
-
                             <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247494162&idx=1&sn=c0ab8929a48a9197ac37818a9bf46c39&chksm=c0de1427f7a99d3153b9e7273667876b5789894de11a340cf76a9a517f254c6714187a515939&token=900185501&lang=zh_CN#rd"
                                target="_blank" rel="noopener" class="card-image">
                                 <img src="./project/gc.png" alt="" class="img-responsive">
@@ -3926,9 +1106,10 @@
                             </div>
                         </div>
                     </div>
-			
-			
-		  <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
+
+
+
+                    <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
 
                             <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247494752&idx=1&sn=c8de4f41e8ae65aec3daa12864abd672&chksm=c0de1255f7a99b430922877da74b4459c260216884a9940c51bd81d3cb513ade7c943bbe930a&token=407768199&lang=zh_CN#rd"
@@ -3946,11 +1127,63 @@
                         </div>
                     </div>
 
-			
+
                 </div>
             </div>
         </div>
     </div>
+    </div>
+</section>
+
+<!-- 能力模块 -->
+<section id="skills" class="home-section wg-featurette   ">
+    <div class="container">
+
+        <div class="row featurette">
+
+            <div class="col-12 section-heading">
+                <h1>能力</h1>
+                <p>课题组注重培养创新思维、批判性思维、团队协作、实践应用等能力</p>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                <div class="position-relative py-2 shadow featurette-margin">
+                    <div class="progress-bar" style="width:"></div>
+                    <div class="featurette-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>创新思维</h3>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                <div class="position-relative py-2 shadow featurette-margin">
+                    <div class="progress-bar" style="width:"></div>
+                    <div class="featurette-icon"><i class="fas fa-user-secret"></i></div>
+                    <h3>批判性思维</h3>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                <div class="position-relative py-2 shadow featurette-margin">
+                    <div class="progress-bar" style="width:"></div>
+                    <div class="featurette-icon"><i class="fas fa-user"></i></div>
+                    <h3>团队协作</h3>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                <div class="position-relative py-2 shadow featurette-margin">
+                    <div class="progress-bar" style="width:"></div>
+                    <div class="featurette-icon"><i class="fab fa-searchengin"></i></div>
+                    <h3>实践应用</h3>
+
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
 

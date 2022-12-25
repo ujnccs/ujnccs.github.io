@@ -1,8 +1,9 @@
+<!--测试程序-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <title>济南大学信息安全课题组</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,11 +31,11 @@
 
   <link rel="stylesheet" href="../css/academia.min.bb5ab09ea511c063bce928c9c03b5ec3.css">
 
-  <link rel="alternate" href="./index.xml" type="application/rss+xml" title="信息安全课题组">
-  <link rel="feed" href="./index.xml" type="application/rss+xml" title="信息安全课题组">
+  <link rel="alternate" href="../index.xml" type="application/rss+xml" title="信息安全课题组">
+  <link rel="feed" href="../index.xml" type="application/rss+xml" title="信息安全课题组">
 
 
-  <link rel="manifest" href="./site.webmanifest">
+  <link rel="manifest" href="../site.webmanifest">
   <link rel="icon" type="image/png" href="../img/security.png">
   <link rel="apple-touch-icon" type="image/png" href="../img/security.png">
 
@@ -48,11 +49,52 @@
   <meta property="og:title" content="信息安全课题组">
   <meta property="og:description" content="信息安全课题组研究生">
   <meta property="og:image" content="https://github.com./img/security.png">
-  <meta property="twitter:image" content="./img/security.png">
+  <meta property="twitter:image" content="../img/security.png">
   <meta property="og:locale" content="en-us">
 
   <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00">
+
   <style>
+    .dropbtn {
+      color: black;
+      padding: 25px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 101px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      text-align: center;   /* 复选框中内容居中 */
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover { color: #FA8072;}  /* 鼠标位置在字体上方的时候变色 */
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      /*background-color: white;*/
+    }
+
     ul {
       padding: 0;
       list-style: none;
@@ -75,14 +117,103 @@
     .swiper-spot .spot-item:nth-of-type(1) {
       margin-left: 0;
     }
-
   </style>
+
+  <title>济南大学信息安全课题组</title>
+
 </head>
-<body>
+
+
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+
+
+<aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+
+    <a class="navbar-brand" href="https://ujnccs.github.io/">UJNCCS</a>
+
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+            aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item dropdown">
+          <a class="dropbtn nav-link">课题组成员</a>
+          <div class="dropdown-content" style="align-items: center">
+            <a href="../indexTest.html">团队主页</a>
+            <a href="third_grade.html">2020级</a>
+            <a href="second_grade.html">2021级</a>
+            <a href="first_grade.html">2022级</a>
+            <a href="overseas_student.html">留学生</a>
+            <a href="graduate.html">毕业生</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="#science" data-target="#science"><span>科研项目</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="#publications" data-target="#publications"><span>科研成果</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="#projects" data-target="#projects"><span>论文分享</span></a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<span class="js-widget-page d-none"></span>
+
+
+<br><br>
 
 <h3 align="center">UJNCCS课题组研一成员信息</h3><br>
 <!-- 按照姓氏拼音进行排序 -->
 <h4 align="center">高丽、孔繁星、李佳瑶、卢世猛、林宇成、沈平章、田洋、魏宇楠、张惠子</h4>
+
 
 <!-- 高丽个人信息模块 -->
 <section id="GaoLi" class="home-section wg-GaoLi   ">
@@ -804,5 +935,146 @@
 </section>
 
 
+
+<!-- 能力模块 -->
+<section id="skills" class="home-section wg-featurette   ">
+  <div class="container">
+
+    <div class="row featurette">
+
+      <div class="col-12 section-heading">
+        <h1>能力</h1>
+        <p>课题组注重培养创新思维、批判性思维、团队协作、实践应用等能力</p>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="position-relative py-2 shadow featurette-margin">
+          <div class="progress-bar" style="width:"></div>
+          <div class="featurette-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>创新思维</h3>
+
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="position-relative py-2 shadow featurette-margin">
+          <div class="progress-bar" style="width:"></div>
+          <div class="featurette-icon"><i class="fas fa-user-secret"></i></div>
+          <h3>批判性思维</h3>
+
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="position-relative py-2 shadow featurette-margin">
+          <div class="progress-bar" style="width:"></div>
+          <div class="featurette-icon"><i class="fas fa-user"></i></div>
+          <h3>团队协作</h3>
+
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="position-relative py-2 shadow featurette-margin">
+          <div class="progress-bar" style="width:"></div>
+          <div class="featurette-icon"><i class="fab fa-searchengin"></i></div>
+          <h3>实践应用</h3>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/imagesloaded.pkgd.min.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/jquery.fancybox.min.js"></script>
+<script src="../js/highlight.min.js"></script>
+<script src="../js/leaflet.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="../js/academia.min.d855db529d1536aa93bfa7c2f9a59479.js"></script>
+
+<div class="container">
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+
+          <p>
+            Copyright &copy; 2021 Chuan Zhao &middot;
+            Powered by
+            <a href="https://themes.gohugo.io/tags/search/" target="_blank" rel="noopener">Hugo</a>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline network-icon text-right">
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
+
+<script src="../js/slider.js"></script>
+<script>
+  console.time();
+  let imgArr = [
+    {
+      url: '#',
+      imgPath: '../img/group.jpg'
+    },
+    {
+      url: '#',
+      imgPath: '../img/southern_mountain.jpg'
+    }
+  ];
+  new Swiper({
+    imgArr: imgArr,
+    aniTIme: 1000,
+    intervalTime: 1000,
+    autoplay: true
+  }).init();
+  console.timeEnd();
+
+</script>
+
 </html>
+
+
+
+

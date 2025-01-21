@@ -1,7 +1,6 @@
-<!-- 目前github部署的课题组代码 -->
-<!-- https://ujnccs.github.io/ -->
-
 <!DOCTYPE html>
+<!-- https://ccs.ujn.edu.cn/ -->
+
 <html lang="en-us">
 
 <head>
@@ -10,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="generator" content="Source Themes Academia 4.3.1">
-    <meta name="generator" content="Hugo 0.55.6"/>
+    <meta name="generator" content="Hugo 0.55.6" />
 
     <meta name="author" content="张雪">
 
@@ -28,8 +27,7 @@
     <link rel="stylesheet" href="./css/dracula.min.css">
     <link rel="stylesheet" href="./css/leaflet.css">
 
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
 
     <link rel="stylesheet" href="./css/academia.min.bb5ab09ea511c063bce928c9c03b5ec3.css">
 
@@ -62,13 +60,11 @@
             padding: 25px;
             font-size: 16px;
             border: none;
-            cursor: pointer;
-        }
+            cursor: pointer;}
 
         .dropdown {
             position: relative;
-            display: inline-block;
-        }
+            display: inline-block;}
 
         .dropdown-content {
             display: none;
@@ -77,48 +73,46 @@
             min-width: 101px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
-            text-align: center;   /* 复选框中内容居中 */
-        }
+            text-align: center;}
 
         .dropdown-content a {
             color: black;
             padding: 12px 16px;
             text-decoration: none;
-            display: block;
-        }
+            display: block;}
 
         .dropdown-content a:hover { color: #FA8072;}  /* 鼠标位置在字体上方的时候变色 */
 
         .dropdown:hover .dropdown-content {
-            display: block;
-        }
+            display: block;}
 
-        .dropdown:hover .dropbtn {
-            /*background-color: white;*/
-        }
+        .dropdown:hover .dropbtn {}
 
         ul {
             padding: 0;
-            list-style: none;
-        }
+            list-style: none;}
 
         img {
             width: 100%;
             height: 100%;
-            display: block;
-        }
+            display: block;}
 
         .swiper-spot .spot-item {
             width: 15px;
             height: 15px;
             border-radius: 50%;
             background-color: #ccc;
-            margin-left: 10px;
-        }
+            margin-left: 10px;}
 
         .swiper-spot .spot-item:nth-of-type(1) {
-            margin-left: 0;
-        }
+            margin-left: 0;}
+
+        .imagecontainer {
+            display: flex;
+            }
+            .imagecontainer img {
+              marginright: 10px;
+            }
     </style>
 
     <title>济南大学信息安全课题组</title>
@@ -162,8 +156,7 @@
 
         <a class="navbar-brand" href="https://ujnccs.github.io/">UJNCCS</a>
 
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
-                aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
         </button>
 
 
@@ -174,13 +167,16 @@
                     <a class="dropbtn nav-link">课题组成员</a>
                     <div class="dropdown-content" style="align-items: center">
                         <a href="index.html">团队主页</a>
-                        <a href="student/2021.html">2021级</a>
                         <a href="student/2022.html">2022级</a>
                         <a href="student/2023.html">2023级</a>
+                        <a href="student/2024.html">2024级</a>
                         <a href="student/overseas_student.html">留学生</a>
                         <a href="student/graduate.html">毕业生</a>
-			<a href="student/cooperation.html">战略合作</a>
                     </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="cooperation.html" data-target=""><span>战略合作</span></a>
                 </li>
 
                 <li class="nav-item">
@@ -195,7 +191,7 @@
                     <a class="nav-link " href="#projects" data-target="#projects"><span>论文分享</span></a>
                 </li>
 
-		 <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link " href="#activity" data-target="#activity"><span>新闻活动</span></a>
                 </li>
 
@@ -227,9 +223,9 @@
                     <p>
                         这是一支年轻、多元、包容的科研团队，秉承着开放而务实的科研精神，营造了严肃而活泼的学术氛围。非常欢迎热衷于从事网络空间安全事业的同学加入我们！
                     </p>
-                    <p><span style="color:red;">(Notice to international students) We are looking for highly motivated graduate students to join us on exciting information security projects!
-	    Please feel free to send your CV, TRANSCRIPTS, and PUBLICATIONS to ist.ujn@gmail.com
-	    for CSC Scholarship and Shandong Provincial Scholarship opportunities. </span></p>
+                    <p><span style="color:red;">(Notice to international students) We are looking for highly motivated PhD students and graduate students to join us on exciting information security projects!
+        Please feel free to send your CV, TRANSCRIPTS, and PUBLICATIONS to ist.ujn@gmail.com
+        for CSC Scholarship and Shandong Provincial Scholarship opportunities. </span></p>
 
                 </div>
 
@@ -237,7 +233,7 @@
 
             <!--   <div class="swiper-list"></div>      -->
             <div class="col-10 mx-auto col-md-6 order-md-2 hero-media">
-                <img class="hero-img img-fluid" src="img/group_2023.jpg" itemprop="image" alt="Avatar">
+                <img class="hero-img img-fluid" src="img/group_2024.jpg" itemprop="image" alt="Avatar">
             </div>
 
         </div>
@@ -251,8 +247,7 @@
     <div class="container">
 
 
-        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person"
-             itemref="person-email person-telephone person-address">
+        <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-telephone person-address">
             <div class="col-lg-5">
                 <div id="profile">
 
@@ -292,7 +287,7 @@
             <div class="col-lg-7" itemprop="description">
 
                 <div class="portrait-title">
-                    <h2 itemprop="name">赵川 <a href="https://ujnccs.github.io/index_en.html">(Homepage)</a></h2>
+                    <h2 itemprop="name">赵川 <a href="index_en.html">(Homepage)</a></h2>
                     <h3 class="d-inline-block" itemprop="jobTitle">信息安全课题组导师,</h3>
 
 
@@ -307,18 +302,17 @@
                 <link itemprop="url" href="">
 
 
-                  <p>
-                    博士，教授，硕士生导师，学科带头人校聘岗，山东省泰山学者青年专家，ACM济南新星奖获得者，泉城省实验室隐私计算团队负责人，中国计算机学会互联网专委会执行委员，中国中文信息学会大数据安全与隐私计算专委会委员，山东计算机学会网络空间安全专委会常务委员，山东省商密协会密码研究专家。曾任美国印第安纳大学博士后研究员。
+                <p>
+                    博士，教授，博士生导师，山东省泛在智能计算重点实验室副主任，泉城省实验室隐私计算团队负责人，学科带头人校聘岗，山东省泰山学者青年专家，ACM济南新星奖获得者，中国计算机学会高级会员，中国计算机学会互联网专委会执行委员，中国中文信息学会大数据安全与隐私计算专委会委员，山东计算机学会网络空间安全专委会常务委员，山东省商密协会密码研究专家。曾任美国印第安纳大学博士后研究员。
                 </p>
 
                 <p>
-                    长期从事网络空间安全、密码学和隐私保护领域的科研与教学工作，在国内外重要期刊和会议上发表学术论文40余篇，授权发明专利20余项。主持国家自然科学基金项目1项、省部级项目4项。
+                    长期从事网络空间安全、密码学和隐私保护领域的科研与教学工作，在国内外重要期刊和会议上发表学术论文40余篇，单篇最高被引432次；授权中国、日本发明专利30余项，转化4项；出版领域内重要学术专著1部；主持国家自然科学基金项目2项、省部级科研项目4项、横向课题3项；研究成果获山东省科技进步二等奖、中国电子学会科技进步二等奖、中国商业联合会科技进步二等奖、山东计算机学会科技进步一等奖等重要学术奖励。
                 </p>
 
-                <p><span style="color:red;">研究兴趣：隐私计算、区块链、应用密码学、人工智能安全。</p>
+                <p><span style="color:red;">研究兴趣：隐私计算、区块链、应用密码学、人工智能安全。</span></p>
 
-                <p><a href="./cv.pdf" class="btn btn-primary btn-lg"><i class="fas fa-download mr-2"
-                                                                        aria-hidden="true"></i>个人简历 (Resume)</a></p>
+                <p><a href="./cv.pdf" class="btn btn-primary btn-lg"><i class="fas fa-download mr-2" aria-hidden="true"></i>个人简历 (Resume)</a></p>
 
 
             </div>
@@ -326,7 +320,6 @@
 
     </div>
 </section>
-
 
 
 <!-- 科研项目模块 -->
@@ -343,37 +336,37 @@
             <div class="col-12">
                 <div class="row justify-content-center">
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
 
-                        <h5>主持项目：</h5>
+                        <h5>科研项目：</h5>
 
-                        <a><b>1. 泰山学者青年专家工程（2022.07-2025.06，在研），75万元</b>
+                        <a><b>1. 国家自然科学基金面上项目（2025.01-2028.12，在研，项目负责人）</b><br>“实用安全多方学习协议设计与优化”（No.62472252），50万元<br></span>
+                        </a><br>
 
+                        <a><b>2. 山东省自然科学基金（2024.01-2026.12，在研，子课题负责人）</b><br>“面向数据中心服务器的计算型存储研究与应用验证”（No.ZR2023LZH014），115万元<br></span>
+                        </a><br>
+
+                        <a><b>3. 省实验室重点项目（2023.01-2024.12，在研，课题负责人）</b><br>“大数据隐私计算及其密码关键技术研究（课题5：安全联邦学习全流程隐私保护关键技术与方法研究）”（No.QCLZD202302），1500/300万元<br></span>
+                        </a><br>
+
+                        <a><b>4. 山东省泰山学者工程（2022.07-2025.06，在研，项目负责人）</b><br>“泰山学者青年专家”（No.tsqn202211280），75万元</b></span>
                         </a><br><br>
 
-
-                        <a><b>2. 山东省自然科学基金创新发展联合基金重点项目（2022.01-2024.12，在研）</b><br>“基于国产异构计算平台的信息安全技术研究”（No.ZR2021LZH007），200万元<br></span>
+                        <a><b>5. 山东省自然科学基金创新发展联合基金重点项目（2022.01-2024.12，在研，项目负责人）</b><br>“基于国产异构计算平台的信息安全技术研究”（No.ZR2021LZH007），200万元<br></span>
                         </a><br>
 
-                        <a><b>3.山东省自然科学基金（2024.01-2026.12，在研）</b><br>“面向数据中心服务器的计算型存储研究与应用验证”（No.ZR2023LZH014），115万元<br></span>
+                        <a><b>6. 山东省重点研发计划项目（2019.01–2021.12，结题，项目负责人）</b><br>“面向精准医疗的大数据隐私保护云计算平台研发”（No.2019GGX101028），20万元<br></span>
                         </a><br>
 
-                        <a><b>4.泉城省实验室（2023.01-2024.12，在研）</b><br>“大数据隐私计算及其密码关键技术研究（课题5：安全联邦学习全流程隐私保护关键技术与方法研究）”（No.QCLZD202302），1500/300万元<br></span>
+                        <a><b>7. 国家自然科学基金青年项目（2018.01–2020.12，结题，项目负责人）</b><br>“面向基因组序列比对隐私保护的高效安全两方计算研究”（No.61702218），25万元<br></span>
                         </a><br>
 
-			<a><b>5.国家自然科学基金青年项目（2018.01–2020.12，结题）</b><br>“面向基因组序列比对隐私保护的高效安全两方计算研究”（No.61702218），25万元<br></span>
-                        </a><br>
-
-                        <a><b>6.山东省重点研发计划项目（2019.01–2021.12，结题）</b><br>“面向精准医疗的大数据隐私保护云计算平台研发”（No.2019GGX101028），20万元<br></span>
-                        </a><br>
-
-                        <a><b>7.山东省高等学校科技计划项目（2018.01–2020.12，结题）</b><br>“云环境下高效安全基因组序列比对研究”（No.J18KA349），2万元<br></span>
+                        <a><b>8. 山东省高等学校科技计划项目（2018.01–2020.12，结题，项目负责人）</b><br>“云环境下高效安全基因组序列比对研究”（No.J18KA349），2万元<br></span>
                         </a><br>
 
                         <h4>参与项目：</h4>
 
-                        <a><b>1.山东省自然科学基金（2023.01-2025.12，在研）</b><br>“面向人工智能安全的类脑计算关键方法及应用研究”（No.ZR2022ZD01），188万元<br></span>
+                        <a><b>1. 山东省自然科学基金（2023.01-2025.12，在研）</b><br>“面向人工智能安全的类脑计算关键方法及应用研究”（No.ZR2022ZD01），188万元<br></span>
                         </a><br>
 
                         <a><b>2. 国家自然科学基金面上项目（2016.01-2019.12，结题）</b><br>“实用安全多方计算理论研究”（No.61572294），75万元<br></span></a><br>
@@ -403,7 +396,7 @@
             <div class="col-12">
                 <div class="row justify-content-center">
 
-		<div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
                         <a href="https://ieeexplore.ieee.org/abstract/document/10488703" itemprop="url"><span itemprop="name">Privacy-Preserving Collaborative Learning for Genome Analysis via Secure XGBoost</span></a>
                         <div class="article-metadata" itemprop="author">
@@ -412,7 +405,18 @@
                         <div class="btn-links">
                         </div>
                     </div>
-		<div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
+
+                     <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
+                        <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+                        <a href="https://kns.cnki.net/kcms2/article/abstract?v=SY7jeTtuViI2kOJ6iOJ4eB8CQEzw190xCKDOVxf6OskTwyKqtq-90qcs0xoG0gG0UzOx9OL1niHYXXPq7uSQkHShkktsF5pKV928bbz7OTuOdKzgBcDkk4d-chxd_FyJPEHUi3pKPMy-JiD4wsJdJN8rFWxChcbLhOjCSigBI-CrRyJ0j7Sd2rpd0CM3VoCI&uniplatform=NZKPT&language=CHS" itemprop="url"><span itemprop="name">轻量级异构安全函数计算加速框架</span></a>
+                        <div class="article-metadata" itemprop="author">
+                            <a>赵川; 何章钊; 王豪; 孔繁星; 赵圣楠; 荆山;</a>
+                        </div>
+                        <div class="btn-links">
+                        </div>
+                    </div>
+
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
                         <a href="https://link.springer.com/chapter/10.1007/978-981-97-0942-7_7" itemprop="url"><span itemprop="name">A General Federated Learning Scheme with Blockchain on Non-IID Data</span></a>
                         <div class="article-metadata" itemprop="author">
@@ -452,11 +456,9 @@
                         </div>
                     </div>
 
-                <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://dl.acm.org/doi/abs/10.1145/3605801.3605814" itemprop="url"><span
-                                itemprop="name">A Survey of SDN Data Plane Attacks and Defense Strategies</span></a>
+                        <a href="https://dl.acm.org/doi/abs/10.1145/3605801.3605814" itemprop="url"><span itemprop="name">A Survey of SDN Data Plane Attacks and Defense Strategies</span></a>
                         <div class="article-metadata" itemprop="author">
                             <a>W Zhang, S Jing, C Zhao</a>
                         </div>
@@ -464,11 +466,9 @@
                         </div>
                     </div>
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/int.23020" itemprop="url"><span
-                                itemprop="name">Privacy‐enhancing machine learning framework with private aggregation of teacher ensembles</span></a>
+                        <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/int.23020" itemprop="url"><span itemprop="name">Privacy‐enhancing machine learning framework with private aggregation of teacher ensembles</span></a>
                         <div class="article-metadata" itemprop="author">
                             <a>S Zhao, Q Zhao, C Zhao, H Jiang, Q Xu</a>
                         </div>
@@ -477,11 +477,9 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-20099-1_4" itemprop="url"><span
-                                itemprop="name">Overview of DDoS Attack Research Under SDN</span></a>
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-20099-1_4" itemprop="url"><span itemprop="name">Overview of DDoS Attack Research Under SDN</span></a>
                         <div class="article-metadata" itemprop="author">
                             <a>L Guo, S Jing, C Zhao</a>
                         </div>
@@ -489,23 +487,19 @@
                         </div>
                     </div>
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/10036212" itemprop="url"><span
-                                itemprop="name">SDN-Based Load Balancing Solution for Deterministic Backbone Networks</span></a>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10036212" itemprop="url"><span itemprop="name">SDN-Based Load Balancing Solution for Deterministic Backbone Networks</span></a>
                         <div class="article-metadata" itemprop="author">
                             <a>X Zhang, L Wei, S Jing, C Zhao, Z Chen</a>
                         </div>
                         <div class="btn-links">
                         </div>
-                    </div>   
-			
-		<div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    </div>
+
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://www.hindawi.com/journals/scn/2022/9428610/"
-                           itemprop="url"><span itemprop="name">Privacy-Preserving Collaborative Computation for Human Activity Recognition</span></a>
+                        <a href="https://www.hindawi.com/journals/scn/2022/9428610/" itemprop="url"><span itemprop="name">Privacy-Preserving Collaborative Computation for Human Activity Recognition</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>Lin Wang, Chuan Zhao, Kun Zhao, Bo Zhang, Shan Jing, Zhenxiang Chen, Kuiheng Sun</a>
@@ -515,11 +509,9 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/int.22985"
-                           itemprop="url"><span itemprop="name">Flexible privacy-preserving machine learning: When searchable encryption meets homomorphic encryption</span></a>
+                        <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/int.22985" itemprop="url"><span itemprop="name">Flexible privacy-preserving machine learning: When searchable encryption meets homomorphic encryption</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>Haixin Jia, Mohammed S. Aldeen, Chuan Zhao, Shan Jing, Zhenxiang Chen</a>
@@ -529,52 +521,42 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CAPJ&dbname=CAPJLAST&filename=JFYZ20211103009&uniplatform=NZKPT&v=8SqcXNnYzq0k-TnXwdJeTjKlny_6Ayvqfhc54RKWj92utGlEkikaA9MuJI68eKKc"
-                           itemprop="url"><span itemprop="name">基于Cut-and-Choose的安全多方计算协议研究进展</span></a>
+                        <a href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CAPJ&dbname=CAPJLAST&filename=JFYZ20211103009&uniplatform=NZKPT&v=8SqcXNnYzq0k-TnXwdJeTjKlny_6Ayvqfhc54RKWj92utGlEkikaA9MuJI68eKKc" itemprop="url"><span itemprop="name">基于Cut-and-Choose的安全多方计算协议研究进展</span></a>
 
                         <div class="article-metadata" itemprop="author">
-                            <span itemprop="author name" itemtype="http://schema.org/Person"><a>赵川</a></span>, <span
-                                itemprop="author name" itemtype="http://schema.org/Person"><a>徐俊</a></span>
+                            <span itemprop="author name" itemtype="http://schema.org/Person"><a>赵川</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a>徐俊</a></span>
                         </div>
                         <div class="btn-links">
                         </div>
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://www.sciencedirect.com/science/article/pii/S0020025520302462"
-                           itemprop="url"><span itemprop="name">Oblivious DFA evaluation on joint input and its applications</span></a>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0020025520302462" itemprop="url"><span itemprop="name">Oblivious DFA evaluation on joint input and its applications</span></a>
                         <div class="article-metadata" itemprop="author">
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Chuan Zhao</a></span>,
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Shengnan Zhao</a></span>,
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Bo Zhang</a></span>,
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Shan Jing</a></span>,
-                            <span itemprop="author name"
-                                  itemtype="http://schema.org/Person"><a>Zhenxiang Chen</a></span>, <span
-                                itemprop="author name" itemtype="http://schema.org/Person"><a>Minghao Zhao</a></span>
+                            <span itemprop="author name" itemtype="http://schema.org/Person"><a>Zhenxiang Chen</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a>Minghao Zhao</a></span>
                         </div>
                         <div class="btn-links">
                         </div>
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://onlinelibrary.wiley.com/doi/10.1002/int.22241" itemprop="url"><span
-                                itemprop="name">PrivateDL: Privacy‐preserving collaborative deep learning against leakage from gradient sharing</span></a>
+                        <a href="https://onlinelibrary.wiley.com/doi/10.1002/int.22241" itemprop="url"><span itemprop="name">PrivateDL: Privacy‐preserving collaborative deep learning against leakage from gradient sharing</span></a>
                         <div class="article-metadata" itemprop="author">
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Qi Zhao</a></span>,
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Chuan Zhao</a></span>,
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Shujie Cui</a></span>,
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Shan Jing</a></span>,
-                            <span itemprop="author name"
-                                  itemtype="http://schema.org/Person"><a>Zhenxiang Chen</a></span>
+                            <span itemprop="author name" itemtype="http://schema.org/Person"><a>Zhenxiang Chen</a></span>
                         </div>
                         <div class="btn-links">
                         </div>
@@ -582,11 +564,9 @@
 
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://www.sciencedirect.com/science/article/pii/S0167404818306618"
-                           itemprop="url"><span itemprop="name">Cancelable Palmprint Templates Based on Random Measurement and Noise Data for Security and Privacy-Preserving Authentication
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0167404818306618" itemprop="url"><span itemprop="name">Cancelable Palmprint Templates Based on Random Measurement and Noise Data for Security and Privacy-Preserving Authentication
 </span></a>
                         <div class="article-metadata" itemprop="author">
                             <span itemprop="author name" itemtype="http://schema.org/Person"><a>Jian Qiu</a></span>,
@@ -599,11 +579,9 @@
 
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://www.sciencedirect.com/science/article/pii/S108480451930030X"
-                           itemprop="url"><span itemprop="name">Towards Dependable and Trustworthy Outsourced Computing: A Comprehensive Survey and Tutorial</span></a>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S108480451930030X" itemprop="url"><span itemprop="name">Towards Dependable and Trustworthy Outsourced Computing: A Comprehensive Survey and Tutorial</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>Minghao Zhao, Chengyu Hu, Xiangfu Song, Chuan Zhao</a>
@@ -613,11 +591,9 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://www.sciencedirect.com/science/article/pii/S0020025518308338"
-                           itemprop="url"><span itemprop="name">Secure Multi-Party Computation: Theory, Practice and Applications</span></a>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0020025518308338" itemprop="url"><span itemprop="name">Secure Multi-Party Computation: Theory, Practice and Applications</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>Chuan Zhao, Shengnan Zhao, Minghao Zhao, Chong-Zhi Gao, Hongwei Li, Yu-an Tan</a>
@@ -627,8 +603,7 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
                         <a href="http://www.jcr.cacrnet.org.cn/EN/Y2019/V6/I2/194" itemprop="url"><span itemprop="name">Advances in Practical Secure Two-party Computation and Its Application in Genomic Sequence Comparison (in Chinese)</span></a>
 
@@ -641,11 +616,9 @@
 
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/8360423" itemprop="url"><span
-                                itemprop="name">Secure Comparison under Ideal/Real Simulation Paradigm</span></a>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/8360423" itemprop="url"><span itemprop="name">Secure Comparison under Ideal/Real Simulation Paradigm</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>Chuan Zhao, Shengnan Zhao, Zhenxiang Chen, Bo Zhang, Mauro Conti</a>
@@ -656,11 +629,9 @@
 
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://www.researchgate.net/publication/329224040_Cryptanalysis_of_a_Lightweight_Certificateless_Signature_Scheme_for_IIOT_Environments"
-                           itemprop="url"><span itemprop="name">Cryptanalysis of a Lightweight Certificateless Signature Scheme for IIOT Environments</span></a>
+                        <a href="https://www.researchgate.net/publication/329224040_Cryptanalysis_of_a_Lightweight_Certificateless_Signature_Scheme_for_IIOT_Environments" itemprop="url"><span itemprop="name">Cryptanalysis of a Lightweight Certificateless Signature Scheme for IIOT Environments</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>Bo Zhang, Tianqing Zhu, Chengyu Hu, Chuan Zhao</a>
@@ -671,11 +642,9 @@
 
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://www.researchgate.net/publication/329224040_Cryptanalysis_of_a_Lightweight_Certificateless_Signature_Scheme_for_IIOT_Environments"
-                           itemprop="url"><span itemprop="name">An Efficient Certificateless Generalized Signcryption Scheme</span></a>
+                        <a href="https://www.researchgate.net/publication/329224040_Cryptanalysis_of_a_Lightweight_Certificateless_Signature_Scheme_for_IIOT_Environments" itemprop="url"><span itemprop="name">An Efficient Certificateless Generalized Signcryption Scheme</span></a>
                         <div class="article-metadata" itemprop="author">
                             <a>Bo Zhang, Zhongtian Jia, Chuan Zhao</a>
                         </div>
@@ -685,8 +654,7 @@
 
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
                         <a href="https://ieeexplore.ieee.org/document/8101555" itemprop="url"><span itemprop="name">Detecting Android Malware Leveraging Text Semantics of Network Flows</span></a>
 
@@ -699,11 +667,9 @@
 
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://digital-library.theiet.org/content/journals/10.1049/cje.2016.06.025"
-                           itemprop="url"><span itemprop="name">Fast Two-Output Secure Computation with Optimal Error Probability</span></a>
+                        <a href="https://digital-library.theiet.org/content/journals/10.1049/cje.2016.06.025" itemprop="url"><span itemprop="name">Fast Two-Output Secure Computation with Optimal Error Probability</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>Chuan Zhao, Han Jiang, Qiuliang Xu, Yilei Wang, Xiaochao Wei, Shujie Cui</a>
@@ -714,11 +680,9 @@
 
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://link.springer.com/article/10.1007/s00500-016-2271-2" itemprop="url"><span
-                                itemprop="name">Verifiable Outsourced Ciphertext-Policy Attribute-Based Encryption in Cloud Computing</span></a>
+                        <a href="https://link.springer.com/article/10.1007/s00500-016-2271-2" itemprop="url"><span itemprop="name">Verifiable Outsourced Ciphertext-Policy Attribute-Based Encryption in Cloud Computing</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>Hao Wang, Debiao He, Jian Shen, Zhihua Zheng, Chuan Zhao, Minghao Zhao</a>
@@ -729,12 +693,9 @@
 
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://www.researchgate.net/publication/316092605_Cut-and-choose_bilateral_oblivious_transfer"
-                           itemprop="url"><span
-                                itemprop="name">Cut-and-Choose Bilateral Oblivious Transfer (in Chinese)</span></a>
+                        <a href="https://www.researchgate.net/publication/316092605_Cut-and-choose_bilateral_oblivious_transfer" itemprop="url"><span itemprop="name">Cut-and-Choose Bilateral Oblivious Transfer (in Chinese)</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>Chuan Zhao, Han Jiang, Xiaochao Wei, Qiuliang Xu</a>
@@ -745,11 +706,9 @@
                         </div>
                     </div>
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://www.igi-global.com/article/several-oblivious-transfer-variants-in-cut-and-choose-scenario/148063"
-                           itemprop="url"><span itemprop="name">Several Oblivious Transfer Variants in Cut-and-Choose Scenario</span></a>
+                        <a href="https://www.igi-global.com/article/several-oblivious-transfer-variants-in-cut-and-choose-scenario/148063" itemprop="url"><span itemprop="name">Several Oblivious Transfer Variants in Cut-and-Choose Scenario</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>Chuan Zhao, Han Jiang, Qiuliang Xu, Xiaochao Wei, Hao Wang</a>
@@ -760,11 +719,9 @@
                         </div>
                     </div>
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="http://crad.ict.ac.cn/EN/abstract/abstract3295.shtml" itemprop="url"><span
-                                itemprop="name">An Efficient 1-out-of-n Oblivious Transfer Protocol with Full Simulation (in Chinese)</span></a>
+                        <a href="http://crad.ict.ac.cn/EN/abstract/abstract3295.shtml" itemprop="url"><span itemprop="name">An Efficient 1-out-of-n Oblivious Transfer Protocol with Full Simulation (in Chinese)</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>Xiaochao Wei, Han Jiang, Chuan Zhao</a>
@@ -776,11 +733,9 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://link.springer.com/chapter/10.1007/978-3-030-88052-1_11" itemprop="url"><span
-                                itemprop="name">Rare Variants Analysis in Genetic Association Studies with Privacy Protection via Hybrid System</span></a>
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-030-88052-1_11" itemprop="url"><span itemprop="name">Rare Variants Analysis in Genetic Association Studies with Privacy Protection via Hybrid System</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>MS Aldeen, C Zhao</a>
@@ -792,11 +747,9 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://www.sciencedirect.com/science/article/pii/S092523122031657X"
-                           itemprop="url"><span itemprop="name">Effective detection of mobile malware behavior based on explainable deep neural network</span></a>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S092523122031657X" itemprop="url"><span itemprop="name">Effective detection of mobile malware behavior based on explainable deep neural network</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>A Yan, Z Chen, H Zhang, L Peng, Q Yan, MU Hassan, C Zhao, B Yang</a>
@@ -808,11 +761,9 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/9260077" itemprop="url"><span
-                                itemprop="name">Towards Privacy-Preserving Deep Learning: Opportunities and Challenges</span></a>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/9260077" itemprop="url"><span itemprop="name">Towards Privacy-Preserving Deep Learning: Opportunities and Challenges</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>S Ali, MM Irfan, A Bomai, C Zhao</a>
@@ -824,11 +775,9 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/9260109" itemprop="url"><span
-                                itemprop="name">Privacy-Preserving GWAS Computation on Outsourced Data Encrypted under Multiple Keys Through Hybrid System</span></a>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/9260109" itemprop="url"><span itemprop="name">Privacy-Preserving GWAS Computation on Outsourced Data Encrypted under Multiple Keys Through Hybrid System</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>A Bomai, MS Aldeen, C Zhao</a>
@@ -840,11 +789,9 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/9212829" itemprop="url"><span
-                                itemprop="name">Network-based Malware Detection with a Two-tier Architecture for Online Incremental Update</span></a>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/9212829" itemprop="url"><span itemprop="name">Network-based Malware Detection with a Two-tier Architecture for Online Incremental Update</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>A Yan, Z Chen, R Spolaor, S Tan, C Zhao, L Peng, B Yang</a>
@@ -856,11 +803,9 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/8887334" itemprop="url"><span
-                                itemprop="name">A signature-based assistant random oversampling method for malware detection</span></a>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/8887334" itemprop="url"><span itemprop="name">A signature-based assistant random oversampling method for malware detection</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>Y Pang, Z Chen, L Peng, K Ma, C Zhao, K Ji</a>
@@ -871,11 +816,9 @@
                         </div>
                     </div>
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/8761598" itemprop="url"><span
-                                itemprop="name">Dart: Detecting unseen malware variants using adaptation regularization transfer learning</span></a>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/8761598" itemprop="url"><span itemprop="name">Dart: Detecting unseen malware variants using adaptation regularization transfer learning</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>H Li, Z Chen, R Spolaor, Q Yan, C Zhao, B Yang</a>
@@ -886,11 +829,9 @@
                         </div>
                     </div>
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://link.springer.com/chapter/10.1007/978-3-030-05063-4_10" itemprop="url"><span
-                                itemprop="name">A fast and effective detection of mobile malware behavior using network traffic</span></a>
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-030-05063-4_10" itemprop="url"><span itemprop="name">A fast and effective detection of mobile malware behavior using network traffic</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>A Liu, Z Chen, S Wang, L Peng, C Zhao, Y Shi</a>
@@ -901,11 +842,9 @@
                         </div>
                     </div>
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://link.springer.com/chapter/10.1007/978-3-319-63309-1_71" itemprop="url"><span
-                                itemprop="name">Android malware clustering analysis on network-level behavior</span></a>
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-319-63309-1_71" itemprop="url"><span itemprop="name">Android malware clustering analysis on network-level behavior</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>S Wang, Z Chen, X Li, L Wang, K Ji, C Zhao</a>
@@ -917,11 +856,9 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/8005860" itemprop="url"><span
-                                itemprop="name">Finding Android malware trace from highly imbalanced network traffic</span></a>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/8005860" itemprop="url"><span itemprop="name">Finding Android malware trace from highly imbalanced network traffic</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>Y Pang, Z Chen, X Li, S Wang, C Zhao, L Wang, K Ji, Z Li</a>
@@ -933,11 +870,9 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/8116346" itemprop="url"><span
-                                itemprop="name">TextDroid: Semantics-based detection of mobile malware using network flows</span></a>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/8116346" itemprop="url"><span itemprop="name">TextDroid: Semantics-based detection of mobile malware using network flows</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>S Wang, Q Yan, Z Chen, B Yang, C Zhao, M Conti</a>
@@ -949,11 +884,9 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/7846975" itemprop="url"><span
-                                itemprop="name">Fast Cut-and-Choose Bilateral Oblivious Transfer for Malicious Adversaries</span></a>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/7846975" itemprop="url"><span itemprop="name">Fast Cut-and-Choose Bilateral Oblivious Transfer for Malicious Adversaries</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>X Wei, H Jiang, C Zhao, M Zhao, Q Xu</a>
@@ -965,11 +898,9 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://link.springer.com/chapter/10.1007/978-3-319-39077-2_17" itemprop="url"><span
-                                itemprop="name">Practical server-aided k-out-of-n oblivious transfer protocol</span></a>
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-319-39077-2_17" itemprop="url"><span itemprop="name">Practical server-aided k-out-of-n oblivious transfer protocol</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>X Wei, C Zhao, H Jiang, Q Xu, H Wang</a>
@@ -981,11 +912,9 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/7846975" itemprop="url"><span
-                                itemprop="name">Fast Cut-and-Choose Bilateral Oblivious Transfer for Malicious Adversaries</span></a>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/7846975" itemprop="url"><span itemprop="name">Fast Cut-and-Choose Bilateral Oblivious Transfer for Malicious Adversaries</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>X Wei, H Jiang, C Zhao, M Zhao, Q Xu</a>
@@ -996,11 +925,9 @@
                         </div>
                     </div>
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/7345306'" itemprop="url"><span
-                                itemprop="name">Cut-and-choose bilateral oblivious transfer and its application</span></a>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/7345306'" itemprop="url"><span itemprop="name">Cut-and-choose bilateral oblivious transfer and its application</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>C Zhao, H Jiang, X Wei, Q Xu, M Zhao</a>
@@ -1011,11 +938,9 @@
                         </div>
                     </div>
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/7846975" itemprop="url"><span
-                                itemprop="name">Fast Cut-and-Choose Bilateral Oblivious Transfer for Malicious Adversaries</span></a>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/7846975" itemprop="url"><span itemprop="name">Fast Cut-and-Choose Bilateral Oblivious Transfer for Malicious Adversaries</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>X Wei, H Jiang, C Zhao, M Zhao, Q Xu</a>
@@ -1026,11 +951,9 @@
                         </div>
                     </div>
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/sec.979" itemprop="url"><span
-                                itemprop="name">Fair two‐party computation with rational parties holding private types</span></a>
+                        <a href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/sec.979" itemprop="url"><span itemprop="name">Fair two‐party computation with rational parties holding private types</span></a>
 
                         <div class="article-metadata" itemprop="author">
                             <a>Y Wang, DS Wong, C Zhao, Q Xu</a>
@@ -1042,11 +965,9 @@
                     </div>
 
 
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope
-                         itemtype="http://schema.org/ScholarlyArticle">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-                        <a href="https://www.hindawi.com/journals/misy/2015/637458/" itemprop="url"><span
-                                itemprop="name">Fair Secure Computation with Reputation Assumptions in the Mobile Social Networks</span></a>
+                        <a href="https://www.hindawi.com/journals/misy/2015/637458/" itemprop="url"><span itemprop="name">Fair Secure Computation with Reputation Assumptions in the Mobile Social Networks</span></a>
                         <div class="article-metadata" itemprop="author">
                             <a>Y Wang, C Zhao, Q Xu, Z Zheng, Z Chen, Z Liu</a>
                         </div>
@@ -1057,6 +978,21 @@
                 </div>
             </div>
         </div>
+
+        <div class="col-12 text-center section-heading">
+            <br><br>
+                <h1>学术交流</h1>
+                 <p>灵感的交响与共鸣</p>
+            </div>
+        <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
+                        <i class="far fa-file-pdf pub-icon" aria-hidden="true"></i>
+                        <a href="project/CCDM-2024.html" ><span itemprop="name">参加中国数据挖掘会议（CCDM 2024）</span></a>
+
+                        <div class="btn-links">
+
+                        </div>
+        </div>
+
     </div>
 </section>
 
@@ -1077,10 +1013,8 @@
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
 
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&amp;mid=2247483756&amp;idx=3&amp;sn=c6c9805559c839fc47701b618e16aeb4&amp;chksm=c0ddff59f7aa764f77c4046e71308e2a7702a90eb7d253f62eea5d9fd82454337b4eb985fd1c&amp;sessionid=0&amp;scene=126&amp;clicktime=1614062249&amp;enterid=1614062249&amp;ascene=3&amp;devicetype=android-27&amp;version=2700163b&amp;nettype=WIFI&amp;abtest_cookie=AAACAA%3D%3D&amp;lang=zh_CN&amp;exportkey=AXh7vDaZnknCYecJz3%2Fve3o%3D&amp;pass_ticket=DvIEhcrSaTfhehgLiblPxufqjstjeqf8OpaZCu8YdW45hkmr%2F8O2qQkR42fomVYS&amp;wx_header=1"
-                               target="_blank" rel="noopener" class="card-image">
-                                <img src="./project/external-project/featured_hu650f28b9560e5166f62ed34c63edf939_123896_550x0_resize_q90_lanczos.jpg"
-                                     alt="" class="img-responsive">
+                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&amp;mid=2247483756&amp;idx=3&amp;sn=c6c9805559c839fc47701b618e16aeb4&amp;chksm=c0ddff59f7aa764f77c4046e71308e2a7702a90eb7d253f62eea5d9fd82454337b4eb985fd1c&amp;sessionid=0&amp;scene=126&amp;clicktime=1614062249&amp;enterid=1614062249&amp;ascene=3&amp;devicetype=android-27&amp;version=2700163b&amp;nettype=WIFI&amp;abtest_cookie=AAACAA%3D%3D&amp;lang=zh_CN&amp;exportkey=AXh7vDaZnknCYecJz3%2Fve3o%3D&amp;pass_ticket=DvIEhcrSaTfhehgLiblPxufqjstjeqf8OpaZCu8YdW45hkmr%2F8O2qQkR42fomVYS&amp;wx_header=1" target="_blank" rel="noopener" class="card-image">
+                                <img src="./project/external-project/featured_hu650f28b9560e5166f62ed34c63edf939_123896_550x0_resize_q90_lanczos.jpg" alt="" class="img-responsive">
                             </a>
 
                             <div class="card-body">
@@ -1095,8 +1029,7 @@
 
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&amp;mid=2247483720&amp;idx=3&amp;sn=3be69d02ad6784074a3d3c63a2fc4708&amp;chksm=c0ddff7df7aa766b05098119f7d5ff504e705582afe095377df8899c78db83ae620025b8f19e&amp;sessionid=0&amp;scene=126&amp;clicktime=1614071534&amp;enterid=1614071534&amp;ascene=3&amp;devicetype=android-27&amp;version=2700163b&amp;nettype=WIFI&amp;abtest_cookie=AAACAA%3D%3D&amp;lang=zh_CN&amp;exportkey=ASzkXM93Fcv2OBqgwPRcObE%3D&amp;pass_ticket=DvIEhcrSaTfhehgLiblPxufqjstjeqf8OpaZCu8YdW45hkmr%2F8O2qQkR42fomVYS&amp;wx_header=1"
-                               target="_blank" rel="noopener" class="card-image">
+                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&amp;mid=2247483720&amp;idx=3&amp;sn=3be69d02ad6784074a3d3c63a2fc4708&amp;chksm=c0ddff7df7aa766b05098119f7d5ff504e705582afe095377df8899c78db83ae620025b8f19e&amp;sessionid=0&amp;scene=126&amp;clicktime=1614071534&amp;enterid=1614071534&amp;ascene=3&amp;devicetype=android-27&amp;version=2700163b&amp;nettype=WIFI&amp;abtest_cookie=AAACAA%3D%3D&amp;lang=zh_CN&amp;exportkey=ASzkXM93Fcv2OBqgwPRcObE%3D&amp;pass_ticket=DvIEhcrSaTfhehgLiblPxufqjstjeqf8OpaZCu8YdW45hkmr%2F8O2qQkR42fomVYS&amp;wx_header=1" target="_blank" rel="noopener" class="card-image">
                                 <img src="./project/deep-learning/featured.jpg" alt="" class="img-responsive">
                             </a>
 
@@ -1112,10 +1045,8 @@
 
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&amp;mid=2247483756&amp;idx=1&amp;sn=70d980795f1681855e7f431e23a29f3e&amp;chksm=c0ddff59f7aa764f194bc3c31b78c605d55aef5c9008a697184e72c31e5bc7d8b95ee133bdf3&amp;sessionid=0&amp;scene=126&amp;clicktime=1614071884&amp;enterid=1614071884&amp;ascene=3&amp;devicetype=android-27&amp;version=2700163b&amp;nettype=WIFI&amp;abtest_cookie=AAACAA%3D%3D&amp;lang=zh_CN&amp;exportkey=ATAnrvb%2FFxjKUOteSDPFiKc%3D&amp;pass_ticket=DvIEhcrSaTfhehgLiblPxufqjstjeqf8OpaZCu8YdW45hkmr%2F8O2qQkR42fomVYS&amp;wx_header=1"
-                               target="_blank" rel="noopener" class="card-image">
-                                <img src="./project/artificial-intelligence/featured_hu9f0bbcf77d555e2a865a9c160397aa16_44493_550x0_resize_q90_lanczos.jpg"
-                                     alt="" class="img-responsive">
+                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&amp;mid=2247483756&amp;idx=1&amp;sn=70d980795f1681855e7f431e23a29f3e&amp;chksm=c0ddff59f7aa764f194bc3c31b78c605d55aef5c9008a697184e72c31e5bc7d8b95ee133bdf3&amp;sessionid=0&amp;scene=126&amp;clicktime=1614071884&amp;enterid=1614071884&amp;ascene=3&amp;devicetype=android-27&amp;version=2700163b&amp;nettype=WIFI&amp;abtest_cookie=AAACAA%3D%3D&amp;lang=zh_CN&amp;exportkey=ATAnrvb%2FFxjKUOteSDPFiKc%3D&amp;pass_ticket=DvIEhcrSaTfhehgLiblPxufqjstjeqf8OpaZCu8YdW45hkmr%2F8O2qQkR42fomVYS&amp;wx_header=1" target="_blank" rel="noopener" class="card-image">
+                                <img src="./project/artificial-intelligence/featured_hu9f0bbcf77d555e2a865a9c160397aa16_44493_550x0_resize_q90_lanczos.jpg" alt="" class="img-responsive">
                             </a>
 
                             <div class="card-body">
@@ -1130,8 +1061,7 @@
 
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247483720&idx=1&sn=e956e54097b2c1251147d9c13e0fcfe4&chksm=c0ddff7df7aa766be316385bd3c576a0d6c1f95ab99b1331b8316c395a58424c596aeab89b79&xtrack=1&scene=0&subscene=10000&clicktime=1614504953&enterid=1614504953&ascene=7&devicetype=android-27&version=2700163b&nettype=cmnet&abtest_cookie=AAACAA%3D%3D&lang=zh_CN&exportkey=AYZ167HFAaTMXCQ%2FOYPOztM%3D&pass_ticket=55GvE0NBTonFuoDrfjLuBoEbx%2BP1zoSyHtjjR%2FDqKwgKVJ15UzXbzvOI8A2yIWrt&wx_header=1"
-                               target="_blank" rel="noopener" class="card-image">
+                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247483720&idx=1&sn=e956e54097b2c1251147d9c13e0fcfe4&chksm=c0ddff7df7aa766be316385bd3c576a0d6c1f95ab99b1331b8316c395a58424c596aeab89b79&xtrack=1&scene=0&subscene=10000&clicktime=1614504953&enterid=1614504953&ascene=7&devicetype=android-27&version=2700163b&nettype=cmnet&abtest_cookie=AAACAA%3D%3D&lang=zh_CN&exportkey=AYZ167HFAaTMXCQ%2FOYPOztM%3D&pass_ticket=55GvE0NBTonFuoDrfjLuBoEbx%2BP1zoSyHtjjR%2FDqKwgKVJ15UzXbzvOI8A2yIWrt&wx_header=1" target="_blank" rel="noopener" class="card-image">
                                 <img src="./project/ml.png" alt="" class="img-responsive">
                             </a>
 
@@ -1147,8 +1077,7 @@
 
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247483720&idx=2&sn=6e41a1d0a73d6934adf190e402015bb9&chksm=c0ddff7df7aa766bfd6b47a9a029fe8c3cc93a97af5e2d3dab63907512c666f935dbbdc668d4&xtrack=1&scene=0&subscene=10000&clicktime=1614505367&enterid=1614505367&ascene=7&devicetype=android-27&version=2700163b&nettype=cmnet&abtest_cookie=AAACAA%3D%3D&lang=zh_CN&exportkey=AfY1bhS6jxp2UMmFOQpXzog%3D&pass_ticket=55GvE0NBTonFuoDrfjLuBoEbx%2BP1zoSyHtjjR%2FDqKwgKVJ15UzXbzvOI8A2yIWrt&wx_header=1"
-                               target="_blank" rel="noopener" class="card-image">
+                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247483720&idx=2&sn=6e41a1d0a73d6934adf190e402015bb9&chksm=c0ddff7df7aa766bfd6b47a9a029fe8c3cc93a97af5e2d3dab63907512c666f935dbbdc668d4&xtrack=1&scene=0&subscene=10000&clicktime=1614505367&enterid=1614505367&ascene=7&devicetype=android-27&version=2700163b&nettype=cmnet&abtest_cookie=AAACAA%3D%3D&lang=zh_CN&exportkey=AfY1bhS6jxp2UMmFOQpXzog%3D&pass_ticket=55GvE0NBTonFuoDrfjLuBoEbx%2BP1zoSyHtjjR%2FDqKwgKVJ15UzXbzvOI8A2yIWrt&wx_header=1" target="_blank" rel="noopener" class="card-image">
                                 <img src="./project/op.png" alt="" class="img-responsive">
                             </a>
 
@@ -1164,8 +1093,7 @@
 
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247483720&idx=2&sn=6e41a1d0a73d6934adf190e402015bb9&chksm=c0ddff7df7aa766bfd6b47a9a029fe8c3cc93a97af5e2d3dab63907512c666f935dbbdc668d4&xtrack=1&scene=0&subscene=10000&clicktime=1614505367&enterid=1614505367&ascene=7&devicetype=android-27&version=2700163b&nettype=cmnet&abtest_cookie=AAACAA%3D%3D&lang=zh_CN&exportkey=AfY1bhS6jxp2UMmFOQpXzog%3D&pass_ticket=55GvE0NBTonFuoDrfjLuBoEbx%2BP1zoSyHtjjR%2FDqKwgKVJ15UzXbzvOI8A2yIWrt&wx_header=1"
-                               target="_blank" rel="noopener" class="card-image">
+                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247483720&idx=2&sn=6e41a1d0a73d6934adf190e402015bb9&chksm=c0ddff7df7aa766bfd6b47a9a029fe8c3cc93a97af5e2d3dab63907512c666f935dbbdc668d4&xtrack=1&scene=0&subscene=10000&clicktime=1614505367&enterid=1614505367&ascene=7&devicetype=android-27&version=2700163b&nettype=cmnet&abtest_cookie=AAACAA%3D%3D&lang=zh_CN&exportkey=AfY1bhS6jxp2UMmFOQpXzog%3D&pass_ticket=55GvE0NBTonFuoDrfjLuBoEbx%2BP1zoSyHtjjR%2FDqKwgKVJ15UzXbzvOI8A2yIWrt&wx_header=1" target="_blank" rel="noopener" class="card-image">
                                 <img src="./project/hw.png" alt="" class="img-responsive">
                             </a>
 
@@ -1181,8 +1109,7 @@
 
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247493711&idx=3&sn=d9c2d4a80554279277772fed02ece398&chksm=c0de167af7a99f6cd3bff2e70281ce3190fc4663b28c031c4391c80650a5d85535ca6f4e8047&token=900185501&lang=zh_CN#rd"
-                               target="_blank" rel="noopener" class="card-image">
+                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247493711&idx=3&sn=d9c2d4a80554279277772fed02ece398&chksm=c0de167af7a99f6cd3bff2e70281ce3190fc4663b28c031c4391c80650a5d85535ca6f4e8047&token=900185501&lang=zh_CN#rd" target="_blank" rel="noopener" class="card-image">
                                 <img src="./project/fl.png" alt="" class="img-responsive">
                             </a>
 
@@ -1198,8 +1125,7 @@
 
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247494162&idx=1&sn=c0ab8929a48a9197ac37818a9bf46c39&chksm=c0de1427f7a99d3153b9e7273667876b5789894de11a340cf76a9a517f254c6714187a515939&token=900185501&lang=zh_CN#rd"
-                               target="_blank" rel="noopener" class="card-image">
+                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247494162&idx=1&sn=c0ab8929a48a9197ac37818a9bf46c39&chksm=c0de1427f7a99d3153b9e7273667876b5789894de11a340cf76a9a517f254c6714187a515939&token=900185501&lang=zh_CN#rd" target="_blank" rel="noopener" class="card-image">
                                 <img src="./project/gc.png" alt="" class="img-responsive">
                             </a>
 
@@ -1217,10 +1143,8 @@
                     <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
                         <div class="card rounded-0 shadow-sm">
 
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247494752&idx=1&sn=c8de4f41e8ae65aec3daa12864abd672&chksm=c0de1255f7a99b430922877da74b4459c260216884a9940c51bd81d3cb513ade7c943bbe930a&token=407768199&lang=zh_CN#rd"
-                               target="_blank" rel="noopener" class="card-image">
-                                <img src="./project/sf.png"
-                                     alt="" class="img-responsive">
+                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247494752&idx=1&sn=c8de4f41e8ae65aec3daa12864abd672&chksm=c0de1255f7a99b430922877da74b4459c260216884a9940c51bd81d3cb513ade7c943bbe930a&token=407768199&lang=zh_CN#rd" target="_blank" rel="noopener" class="card-image">
+                                <img src="./project/sf.png" alt="" class="img-responsive">
                             </a>
 
                             <div class="card-body">
@@ -1232,15 +1156,17 @@
                         </div>
                     </div>
 
-
                 </div>
             </div>
+
+
+
         </div>
     </div>
     </div>
 </section>
 
-	<!-- 新闻活动模块 -->
+<!-- 新闻活动模块 -->
 <section id="activity" class="home-section wg-portfolio   ">
     <div class="container">
 
@@ -1398,7 +1324,7 @@
 
             <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
                 <div class="position-relative py-2 shadow featurette-margin">
-                    <div class="progress-bar" style="width:"></div>
+                    <div class="progress-bar"></div>
                     <div class="featurette-icon"><i class="fas fa-chart-line"></i></div>
                     <h3>创新思维</h3>
 
@@ -1408,7 +1334,7 @@
 
             <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
                 <div class="position-relative py-2 shadow featurette-margin">
-                    <div class="progress-bar" style="width:"></div>
+                    <div class="progress-bar"></div>
                     <div class="featurette-icon"><i class="fas fa-user-secret"></i></div>
                     <h3>批判性思维</h3>
 
@@ -1417,7 +1343,7 @@
 
             <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
                 <div class="position-relative py-2 shadow featurette-margin">
-                    <div class="progress-bar" style="width:"></div>
+                    <div class="progress-bar"></div>
                     <div class="featurette-icon"><i class="fas fa-user"></i></div>
                     <h3>团队协作</h3>
 
@@ -1426,7 +1352,7 @@
 
             <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
                 <div class="position-relative py-2 shadow featurette-margin">
-                    <div class="progress-bar" style="width:"></div>
+                    <div class="progress-bar"></div>
                     <div class="featurette-icon"><i class="fab fa-searchengin"></i></div>
                     <h3>实践应用</h3>
 
@@ -1523,4 +1449,3 @@
 </script>
 
 </html>
-

@@ -115,6 +115,65 @@
             display: flex;}
             .imagecontainer img {
               marginright: 10px;}
+
+        /* 背景图片固定样式 */
+        #publications, #skills, #academic {
+            position: relative;
+            background-image: url('./img/bg_big.png');
+            background-size: cover;
+            background-position: center 45%;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            padding: 40px 0 !important;
+            margin: 0 !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+        }
+
+        #publications .container, #skills .container, #academic .container {
+            position: relative;
+            padding: 0 !important;
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+
+        #publications .row, #skills .row, #academic .row {
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.75); /* 半透明白色背景，降低透明度 */
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 0 auto !important;
+        }
+
+        /* 标题部分也需要显示背景 */
+        #publications .section-heading, #skills .section-heading, #academic .section-heading {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #publications .section-heading h1, #skills .section-heading h1, #academic .section-heading h1 {
+            color: #333;
+            position: relative;
+            z-index: 2;
+            margin-top: 0;
+        }
+
+        #publications .section-heading p, #skills .section-heading p, #academic .section-heading p {
+            color: #666;
+            position: relative;
+            z-index: 2;
+        }
+
+        #publications .row p, #skills .row p, #academic .row p {
+            color: #666;
+            position: relative;
+            z-index: 2;
+        }
     </style>
 
     <title>济南大学信息安全课题组</title>
@@ -212,7 +271,7 @@
 <span class="js-widget-page d-none"></span>
 
 
-<section id="hero" class="home-section wg-hero   " style="background-color: #fff;">
+<section id="publications" class="home-section wg-hero   " style="background-color: #fff;">
     <div class="container">
 
         <div class="row">
@@ -236,7 +295,7 @@
 
             <!--   <div class="swiper-list"></div>      -->
             <div class="col-10 mx-auto col-md-6 order-md-2 hero-media" style="position: relative; height: 480px;">
-    <img class="hero-img img-fluid hero-img-custom" src="img/group_2024.jpg" itemprop="image" alt="Avatar" style="position: absolute; top: 50%; transform: translateY(-50%);">
+    <img class="hero-img img-fluid hero-img-custom" src="img/bg_little.png" itemprop="image" alt="Avatar" style="position: absolute; top: 50%; transform: translateY(-50%); opacity: 0.8;">
 </div>
 
         </div>
@@ -246,7 +305,8 @@
 
 
 <!--  赵川导师信息模块 -->
-<section id="about" class="home-section wg-about   ">
+<!-- 其实下面的id应该是about，但是不知道为啥背景图不生效，就用的publications了 -->
+<section id="publications" class="home-section wg-about   ">
     <div class="container">
 
 
@@ -330,19 +390,16 @@
 
 
 <!-- 科研项目模块 -->
-<section id="science" class="home-section wg-pages">
+<!-- 下面其实应该是这一句  但是现实背景图有问题
+ <section id="science" class="home-section wg-pages">
+-->
+ <section id="publications" class="home-section wg-pages   ">
     <div class="container">
-
-
         <div class="row">
             <div class="col-12 section-heading text-center">
-                <h1> 科研项目</h1>
+                <h1>科研项目</h1>
                 <p>用心享受科研的乐趣</p>
-
             </div>
-            <div class="col-12">
-                <div class="row justify-content-center">
-
                     <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
 
                         <h5>科研项目：</h5>
@@ -386,9 +443,9 @@
 
                     </div>
 
-                </div>
-            </div>
+
         </div>
+
     </div>
 </section>
 
@@ -398,14 +455,13 @@
     <div class="container">
         <div class="row">
             <div class="col-12 section-heading text-center">
-                <h1> 科研成果</h1>
+                <h1>科研成果</h1>
                 <p>像蜗牛一样慢慢前行</p>
             </div>
             <div class="col-12">
-                <div class="row justify-content-center">
-
+                <div class="justify-content-center">
                     <!-- 1. 安全多方计算（书籍） -->
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/Book">
+                      <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
                         <a href="https://www.ecsponline.com/goods.php?id=224507" itemprop="url"><span itemprop="name">安全多方计算 （论著 2024）</span></a>
                         <div class="article-metadata" itemprop="author">
@@ -414,9 +470,9 @@
                         <div class="btn-links">
                         </div>
                     </div>
-
+                    </div>
                     <!-- 2. Multi-Party Private Set Intersection With One-Round Online Interaction -->
-                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
+                      <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
                         <a href="https://ieeexplore.ieee.org/abstract/document/11018169/" itemprop="url"><span itemprop="name">Multi-Party Private Set Intersection With One-Round Online Interaction</span></a>
                         <div class="article-metadata" itemprop="author">
@@ -425,7 +481,6 @@
                         <div class="btn-links">
                         </div>
                     </div>
-
                     <!-- 3. Privacy-Preserving Collaborative Learning for Genome Analysis via Secure XGBoost -->
                     <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
@@ -956,266 +1011,49 @@
                         </div>
                     </div>
                     -->
-
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-        <div class="col-12 text-center section-heading">
-            <br><br>
+</section>
+<!-- 学术交流模块 -->
+ <section id="publications" class="home-section wg-pages   ">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 section-heading text-center">
                 <h1>学术交流</h1>
-                 <p>灵感的交响与共鸣</p>
+                <p>灵感的交响与共鸣</p>
+                <a href="project/CCDM-2024.html"><span itemprop="name">参加中国数据挖掘会议（CCDM 2024）</span></a>
             </div>
-        <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
+        </div>
+    </div>
+</section>
+<!-- <section id="academic" class="home-section wg-pages">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 section-heading text-center">
+                <h1>学术交流</h1>
+                <p>灵感的交响与共鸣</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="row justify-content-center">
+                    <div class="view-list-item col-lg-8 mx-auto" itemscope itemtype="http://schema.org/ScholarlyArticle">
                         <i class="far fa-file-pdf pub-icon" aria-hidden="true"></i>
                         <a href="project/CCDM-2024.html"><span itemprop="name">参加中国数据挖掘会议（CCDM 2024）</span></a>
-
                         <div class="btn-links">
-
-                        </div>
-        </div>
-
-    </div>
-</section>
-
-<!--
-
-论文分享模块
-<section id="projects" class="home-section wg-portfolio   ">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-12 text-center section-heading">
-
-                <h1> 论文分享</h1>
-                <p>站在巨人的肩膀上</p>
-
-            </div>
-            <div class="col-12">
-                <div class="isotope projects-container js-layout-masonry ">
-
-                    <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
-                        <div class="card rounded-0 shadow-sm">
-
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&amp;mid=2247483756&amp;idx=3&amp;sn=c6c9805559c839fc47701b618e16aeb4&amp;chksm=c0ddff59f7aa764f77c4046e71308e2a7702a90eb7d253f62eea5d9fd82454337b4eb985fd1c&amp;sessionid=0&amp;scene=126&amp;clicktime=1614062249&amp;enterid=1614062249&amp;ascene=3&amp;devicetype=android-27&amp;version=2700163b&amp;nettype=WIFI&amp;abtest_cookie=AAACAA%3D%3D&amp;lang=zh_CN&amp;exportkey=AXh7vDaZnknCYecJz3%2Fve3o%3D&amp;pass_ticket=DvIEhcrSaTfhehgLiblPxufqjstjeqf8OpaZCu8YdW45hkmr%2F8O2qQkR42fomVYS&amp;wx_header=1" target="_blank" rel="noopener" class="card-image">
-                                <img src="./project/external-project/featured_hu650f28b9560e5166f62ed34c63edf939_123896_550x0_resize_q90_lanczos.jpg" alt="" class="img-responsive">
-                            </a>
-
-                            <div class="card-body">
-                                <h4><a>ZeroCoin</a></h4>
-                                <div class="card-desription">
-                                    <p>zerocoin的底层核心思想是依靠简洁非交互式零知识证明来实现</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
-
-
-                    <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
-                        <div class="card rounded-0 shadow-sm">
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&amp;mid=2247483720&amp;idx=3&amp;sn=3be69d02ad6784074a3d3c63a2fc4708&amp;chksm=c0ddff7df7aa766b05098119f7d5ff504e705582afe095377df8899c78db83ae620025b8f19e&amp;sessionid=0&amp;scene=126&amp;clicktime=1614071534&amp;enterid=1614071534&amp;ascene=3&amp;devicetype=android-27&amp;version=2700163b&amp;nettype=WIFI&amp;abtest_cookie=AAACAA%3D%3D&amp;lang=zh_CN&amp;exportkey=ASzkXM93Fcv2OBqgwPRcObE%3D&amp;pass_ticket=DvIEhcrSaTfhehgLiblPxufqjstjeqf8OpaZCu8YdW45hkmr%2F8O2qQkR42fomVYS&amp;wx_header=1" target="_blank" rel="noopener" class="card-image">
-                                <img src="./project/deep-learning/featured.jpg" alt="" class="img-responsive">
-                            </a>
-
-                            <div class="card-body">
-                                <h4><a>基于SDN的云服务器负载均衡服务</a></h4>
-                                <div class="card-desription">
-                                    <p>最后实验表明文中提出的方法在各个指标中都表现很好</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
-                        <div class="card rounded-0 shadow-sm">
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&amp;mid=2247483756&amp;idx=1&amp;sn=70d980795f1681855e7f431e23a29f3e&amp;chksm=c0ddff59f7aa764f194bc3c31b78c605d55aef5c9008a697184e72c31e5bc7d8b95ee133bdf3&amp;sessionid=0&amp;scene=126&amp;clicktime=1614071884&amp;enterid=1614071884&amp;ascene=3&amp;devicetype=android-27&amp;version=2700163b&amp;nettype=WIFI&amp;abtest_cookie=AAACAA%3D%3D&amp;lang=zh_CN&amp;exportkey=ATAnrvb%2FFxjKUOteSDPFiKc%3D&amp;pass_ticket=DvIEhcrSaTfhehgLiblPxufqjstjeqf8OpaZCu8YdW45hkmr%2F8O2qQkR42fomVYS&amp;wx_header=1" target="_blank" rel="noopener" class="card-image">
-                                <img src="./project/artificial-intelligence/featured_hu9f0bbcf77d555e2a865a9c160397aa16_44493_550x0_resize_q90_lanczos.jpg" alt="" class="img-responsive">
-                            </a>
-
-                            <div class="card-body">
-                                <h4><a>高效的4方安全计算</a></h4>
-                                <div class="card-desription">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eius.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
-                        <div class="card rounded-0 shadow-sm">
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247483720&idx=1&sn=e956e54097b2c1251147d9c13e0fcfe4&chksm=c0ddff7df7aa766be316385bd3c576a0d6c1f95ab99b1331b8316c395a58424c596aeab89b79&xtrack=1&scene=0&subscene=10000&clicktime=1614504953&enterid=1614504953&ascene=7&devicetype=android-27&version=2700163b&nettype=cmnet&abtest_cookie=AAACAA%3D%3D&lang=zh_CN&exportkey=AYZ167HFAaTMXCQ%2FOYPOztM%3D&pass_ticket=55GvE0NBTonFuoDrfjLuBoEbx%2BP1zoSyHtjjR%2FDqKwgKVJ15UzXbzvOI8A2yIWrt&wx_header=1" target="_blank" rel="noopener" class="card-image">
-                                <img src="./project/ml.png" alt="" class="img-responsive">
-                            </a>
-
-                            <div class="card-body">
-                                <h4><a>BLAZE-隐私保护机器学习框架</a></h4>
-                                <div class="card-desription">
-                                    <p>与最新的工作ASTAR和AYB3相比，本文提出的隐私保护机器学习框架尽管在高带宽的网络中实用性差，但是却获得有效改进。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
-                        <div class="card rounded-0 shadow-sm">
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247483720&idx=2&sn=6e41a1d0a73d6934adf190e402015bb9&chksm=c0ddff7df7aa766bfd6b47a9a029fe8c3cc93a97af5e2d3dab63907512c666f935dbbdc668d4&xtrack=1&scene=0&subscene=10000&clicktime=1614505367&enterid=1614505367&ascene=7&devicetype=android-27&version=2700163b&nettype=cmnet&abtest_cookie=AAACAA%3D%3D&lang=zh_CN&exportkey=AfY1bhS6jxp2UMmFOQpXzog%3D&pass_ticket=55GvE0NBTonFuoDrfjLuBoEbx%2BP1zoSyHtjjR%2FDqKwgKVJ15UzXbzvOI8A2yIWrt&wx_header=1" target="_blank" rel="noopener" class="card-image">
-                                <img src="./project/op.png" alt="" class="img-responsive">
-                            </a>
-
-                            <div class="card-body">
-                                <h4><a>一种基 OpenFlow的SDN访问控制策略实时冲突检测与解决方法</a></h4>
-                                <div class="card-desription">
-                                    <p>这个方法基于实时的Flowpath并且通过比较防火墙拒绝空间和路径空间，能够精确地检测策略冲突。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
-                        <div class="card rounded-0 shadow-sm">
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247483720&idx=2&sn=6e41a1d0a73d6934adf190e402015bb9&chksm=c0ddff7df7aa766bfd6b47a9a029fe8c3cc93a97af5e2d3dab63907512c666f935dbbdc668d4&xtrack=1&scene=0&subscene=10000&clicktime=1614505367&enterid=1614505367&ascene=7&devicetype=android-27&version=2700163b&nettype=cmnet&abtest_cookie=AAACAA%3D%3D&lang=zh_CN&exportkey=AfY1bhS6jxp2UMmFOQpXzog%3D&pass_ticket=55GvE0NBTonFuoDrfjLuBoEbx%2BP1zoSyHtjjR%2FDqKwgKVJ15UzXbzvOI8A2yIWrt&wx_header=1" target="_blank" rel="noopener" class="card-image">
-                                <img src="./project/hw.png" alt="" class="img-responsive">
-                            </a>
-
-                            <div class="card-body">
-                                <h4><a>Hawk-智能合约框架</a></h4>
-                                <div class="card-desription">
-                                    <p>作者在文章中提到manger实际可以被安全多方计算所取代，但是效率会有所下降。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
-                        <div class="card rounded-0 shadow-sm">
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247493711&idx=3&sn=d9c2d4a80554279277772fed02ece398&chksm=c0de167af7a99f6cd3bff2e70281ce3190fc4663b28c031c4391c80650a5d85535ca6f4e8047&token=900185501&lang=zh_CN#rd" target="_blank" rel="noopener" class="card-image">
-                                <img src="./project/fl.png" alt="" class="img-responsive">
-                            </a>
-
-                            <div class="card-body">
-                                <h4><a>基于边缘计算的隐私保护的安卓恶意软件检测联邦学习系统</a></h4>
-                                <div class="card-desription">
-                                    <p>恶意软件对手机系统安全以及用户的个人信息隐私安全产生了恶劣的影响，由此，一些使用软件权限以及软件调用的API或者行为为特征的机器学习用来分辨恶意软件。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
-                        <div class="card rounded-0 shadow-sm">
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247494162&idx=1&sn=c0ab8929a48a9197ac37818a9bf46c39&chksm=c0de1427f7a99d3153b9e7273667876b5789894de11a340cf76a9a517f254c6714187a515939&token=900185501&lang=zh_CN#rd" target="_blank" rel="noopener" class="card-image">
-                                <img src="./project/gc.png" alt="" class="img-responsive">
-                            </a>
-
-                            <div class="card-body">
-                                <h4><a>使用FPGA覆盖架构实现基于混淆电路的安全函数计算</a></h4>
-                                <div class="card-desription">
-                                    <p>SFE允许相关方评估私有数据上的任何理想的多项式时间函数，只显示答案，不显示数据的其他任何信息。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
-                        <div class="card rounded-0 shadow-sm">
-
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNzIwOTU2Mg==&mid=2247494752&idx=1&sn=c8de4f41e8ae65aec3daa12864abd672&chksm=c0de1255f7a99b430922877da74b4459c260216884a9940c51bd81d3cb513ade7c943bbe930a&token=407768199&lang=zh_CN#rd" target="_blank" rel="noopener" class="card-image">
-                                <img src="./project/sf.png" alt="" class="img-responsive">
-                            </a>
-
-                            <div class="card-body">
-                                <h4><a>SGX-FPGA异构计算</a></h4>
-                                <div class="card-desription">
-                                    <p>作者通过从SGX到FPGA的安全隔离路径将安全执行环境从SGX扩展到了FPGA，实现了SGX和FPGA的安全计算，成功防止了CPU-CPU、CPU-FPGA、FPGA-CPU这三种类型的攻击。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-
-
-
         </div>
     </div>
-    </div>
-</section>
--->
+</section> -->
 
 
-<!--
-新闻活动模块
-<section id="activity" class="home-section wg-portfolio   ">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-12 text-center section-heading">
-
-                <h1>聚会瞬间</h1>
-                    <p>站在巨人的肩膀上</p>
-
-            </div>
-            <div class="col-12">
-
-                <div class="isotope projects-container js-layout-masonry ">
-                    <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
-                        <div class="card rounded-0 shadow-sm">
-
-                            <a href="img/activity/j3.jpg" target="_blank" rel="noopener" class="card-image">
-                                <img src="img/activity/j3.jpg" alt="" class="img-responsive">
-                            </a>
-
-                            <div class="card-body">
-                                <h4><a>聚会瞬间1</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
-                        <div class="card rounded-0 shadow-sm">
-
-                            <a href="img/activity/j4.jpg" target="_blank" rel="noopener" class="card-image">
-                                <img src="img/activity/j4.jpg" alt="" class="img-responsive">
-                            </a>
-
-                            <div class="card-body">
-                                <h4><a>聚会瞬间2</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card project-item isotope-item js-id-Demo js-id-Deep-Learning">
-                        <div class="card rounded-0 shadow-sm">
-
-                            <a href="img/activity/j5.jpg" target="_blank" rel="noopener" class="card-image">
-                                <img src="img/activity/j5.jpg" alt="" class="img-responsive">
-                            </a>
-
-                            <div class="card-body">
-                                <h4><a>聚会瞬间3</a></h4>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-
-        </div>
-    </div>
-</section>
--->
 
 <!-- 能力模块 -->
 <section id="skills" class="home-section wg-featurette   ">
